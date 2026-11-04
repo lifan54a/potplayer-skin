@@ -1,0 +1,486 @@
+﻿
+<ControlBoxSkinArea Image="Controlbox.png" AlphaMode="1" Width="468" Height="250" UseWindowFrame="0" >
+  <Control>
+    <Static Align="Top" State="" ImageLeft="70" ImageTop="10" Height="1" ImageWidth="3" ImageHeight="1" AltImageLeft="10" AltImageTop="0" LeftMargin="1" RightMargin="1"/>
+    <Static Align="Left" State="" ImageLeft="70" ImageTop="10" TopMargin="2" BottomMargin="2" ImageWidth="1" ImageHeight="5" Width="1" AltImageLeft="10" AltImageTop="0" />
+    <Static Align="Right" State="" ImageLeft="70" ImageTop="10" TopMargin="2" BottomMargin="2" ImageWidth="1" ImageHeight="5" Width="1" AltImageLeft="10" AltImageTop="0" />
+    <Static Align="Top" Height="30" ImageLeft="539" ImageTop="349" AltImageLeft="529" AltImageTop="349" ImageWidth="10" ImageHeight="30" LeftMargin="1" RightMargin="1" IsTitleBar="1" >
+	<Label Text="$CONTROL_BOX" Left="9" Top="10" Height="13" FontName="Segoe UI" FontSize="13" FontBold="0" TextColor="0xcacaca" VertAlignment="1" />
+    	<Button Tooltip="$ID_CONTROL_BOX_WINDOW_OFF" CmdID="ID_CONTROL_BOX_WINDOW" Left="-31" Top="0" Width="31" Height="29" ImageLeft="386" ImageTop="328" />
+    </Static>
+    <Static Align="Bottom" State="" ImageLeft="70" ImageTop="10" Height="1" ImageWidth="3" ImageHeight="1" AltImageLeft="10" AltImageTop="0" LeftMargin="1" RightMargin="1"/>
+
+    <Static Align="Top" Width="468" Height="218" ImageTop="1" ImageLeft="80" ImageWidth="468" ImageHeight="218" LeftMargin="8" RightMargin="8" >
+      <Button CmdID="CMD_SELECT_PAGE" AltCmdID="CMD_POPUPMENU_AUDIO_VOL_MODE" PageIndex="0" Left="0" Top="22" Width="155" Height="37" ImageLeft="1" ImageTop="243" />
+      <Button CmdID="CMD_SELECT_PAGE" AltCmdID="CMD_POPUPMENU_VIDEO_FILTER" PageIndex="1" Left="0" Top="57" Width="155" Height="37" ImageLeft="1" ImageTop="243" />
+      <Button CmdID="CMD_SELECT_PAGE" AltCmdID="ID_CAPTION_INPUT" PageIndex="2" Left="0" Top="92" Width="155" Height="37" ImageLeft="1" ImageTop="243" />
+      <Button CmdID="CMD_SELECT_PAGE" AltCmdID="CMD_POPUPMENU_VIDEO" PageIndex="3" Left="0" Top="127" Width="155" Height="37" ImageLeft="1" ImageTop="243" />
+      <Button CmdID="CMD_SELECT_PAGE" AltCmdID="ID_SCREEN_RATIO_SETTING" PageIndex="4" Left="0" Top="162" Width="155" Height="37" ImageLeft="1" ImageTop="243" />
+      <Label Text="$AUDIO" PageIndex="0" Left="45" Top="28" Width="155" Height="36" FontName="Segoe UI" FontSize="15" TextColor="0xFFFFFF" />
+      <Label Text="$VIDEO" PageIndex="1" Left="45" Top="63" Width="155" Height="36" FontName="Segoe UI" FontSize="15" TextColor="0xFFFFFF" />
+      <Label Text="$CAPTIONS" PageIndex="2" Left="45" Top="98" Width="155" Height="36" FontName="Segoe UI" FontSize="15" TextColor="0xFFFFFF" />
+      <Label Text="$PLAYBACK" PageIndex="3" Left="45" Top="133" Width="155" Height="36" FontName="Segoe UI" FontSize="15" TextColor="0xFFFFFF" />
+      <Label Text="$RATIO" PageIndex="4" Left="45" Top="168" Width="155" Height="36" FontName="Segoe UI" FontSize="15" TextColor="0xFFFFFF" />
+      <Image Left="17" Top="30" Width="20" Height="15" ImageWidth="20" ImageHeight="15" ImageLeft="365" ImageTop="221" />
+      <Image Left="16" Top="63" Width="20" Height="17" ImageWidth="20" ImageHeight="17" ImageLeft="383" ImageTop="221" />
+      <Image Left="16" Top="101" Width="20" Height="15" ImageWidth="20" ImageHeight="19" ImageLeft="402" ImageTop="224" />
+      <Image Left="20" Top="139" Width="20" Height="15" ImageWidth="16" ImageHeight="19" ImageLeft="425" ImageTop="226" />
+      <Image Left="19" Top="170" Width="20" Height="15" ImageWidth="19" ImageHeight="19" ImageLeft="445" ImageTop="222" />
+      <Static State="CMD_PAGE_CONTROL" PageIndex="0" Left="0" Top="22" Width="155" Height="35" ImageLeft="80" ImageTop="1" ImageWidth="155" ImageHeight="35" >
+	<Image Left="0" Top="6" Width="4" Height="23" ImageWidth="4" ImageHeight="23" ImageLeft="311" ImageTop="219" />
+	<Image Left="17" Top="8" Width="20" Height="15" ImageWidth="20" ImageHeight="15" ImageLeft="365" ImageTop="358" />
+	<Label Text="$AUDIO" PageIndex="0" Left="45" Top="6" Width="155" Height="36" FontName="Segoe UI" FontSize="15" ColorX="71" ColorY="3" />
+      </Static>
+      <Static State="CMD_PAGE_CONTROL" PageIndex="1" Left="0" Top="57" Width="155" Height="35" ImageLeft="80" ImageTop="1" ImageWidth="155" ImageHeight="35" >
+	<Image Left="0" Top="6" Width="4" Height="23" ImageWidth="4" ImageHeight="23" ImageLeft="311" ImageTop="219" />
+	<Image Left="16" Top="6" Width="20" Height="17" ImageWidth="20" ImageHeight="17" ImageLeft="383" ImageTop="358" />
+	<Label Text="$VIDEO" PageIndex="1" Left="45" Top="6" Width="155" Height="36" FontName="Segoe UI" FontSize="15" ColorX="71" ColorY="3" />
+      </Static>
+      <Static State="CMD_PAGE_CONTROL" PageIndex="2" Left="0" Top="92" Width="155" Height="35" ImageLeft="80" ImageTop="1" ImageWidth="155" ImageHeight="35" >
+	<Image Left="0" Top="6" Width="4" Height="23" ImageWidth="4" ImageHeight="23" ImageLeft="311" ImageTop="219" />
+	<Image Left="16" Top="9" Width="20" Height="15" ImageWidth="20" ImageHeight="19" ImageLeft="402" ImageTop="361" />
+	<Label Text="$CAPTIONS" PageIndex="2" Left="45" Top="6" Width="155" Height="36" FontName="Segoe UI" FontSize="15" ColorX="71" ColorY="3" />
+      </Static>
+      <Static State="CMD_PAGE_CONTROL" PageIndex="3" Left="0" Top="127" Width="155" Height="35" ImageLeft="80" ImageTop="1" ImageWidth="155" ImageHeight="35" >
+	<Image Left="0" Top="6" Width="4" Height="23" ImageWidth="4" ImageHeight="23" ImageLeft="311" ImageTop="219" />
+	<Image Left="20" Top="12" Width="20" Height="15" ImageWidth="16" ImageHeight="19" ImageLeft="425" ImageTop="363" />
+	<Label Text="$PLAYBACK" PageIndex="3" Left="45" Top="6" Width="155" Height="36" FontName="Segoe UI" FontSize="15" ColorX="71" ColorY="3" />
+      </Static>
+      <Static State="CMD_PAGE_CONTROL" PageIndex="4" Left="0" Top="162" Width="155" Height="35" ImageLeft="80" ImageTop="1" ImageWidth="155" ImageHeight="35" >
+	<Image Left="0" Top="6" Width="4" Height="23" ImageWidth="4" ImageHeight="23" ImageLeft="311" ImageTop="219" />
+	<Image Left="19" Top="8" Width="20" Height="15" ImageWidth="19" ImageHeight="19" ImageLeft="445" ImageTop="359" />
+	<Label Text="$RATIO" PageIndex="4" Left="45" Top="6" Width="155" Height="36" FontName="Segoe UI" FontSize="15" ColorX="71" ColorY="3" />
+      </Static>
+
+      <Static State="CMD_PAGE_CONTROL" PageIndex="0" Left="155" Width="313" Height="218" ImageTop="1" ImageLeft="235" ImageWidth="313" ImageHeight="218" >
+	#if<LocaleName==Italian>
+	<Label Text="Attiva" CmdID="ID_AUDIO_EQULIZER" AutoVisible="-1" Left="64" Top="28" Width="56" Height="22" FontName="Segoe UI SemiLight" FontSize="14" FontBold="0" VertAlignment="1" TextColor="0xdbd9d9" />
+	<Label Text="Disattiva" CmdID="ID_AUDIO_EQULIZER" AutoVisible="1" Left="64" Top="28" Width="56" Height="22" FontName="Segoe UI SemiLight" FontSize="14" FontBold="0" VertAlignment="1" TextColor="0xdbd9d9" />
+	#else
+【均衡器】
+	<Label Text="$On" CmdID="ID_AUDIO_EQULIZER" AutoVisible="-1" Left="64" Top="29" Width="56" Height="22" FontName="Segoe UI SemiLight" FontSize="14" FontBold="0" VertAlignment="1" TextColor="0xdbd9d9" />
+	<Label Text="$Off" CmdID="ID_AUDIO_EQULIZER" AutoVisible="1" Left="64" Top="29" Width="56" Height="22" FontName="Segoe UI SemiLight" FontSize="14" FontBold="0" VertAlignment="1" TextColor="0xdbd9d9" />
+	#endif
+	<Button CmdID="ID_AUDIO_EQULIZER" AutoVisible="-1" Left="16" Top="31" Width="42" Height="18" ImageLeft="144" ImageTop="222" />
+	<Button CmdID="ID_AUDIO_EQULIZER" AutoVisible="1" Left="16" Top="31" Width="42" Height="18" ImageLeft="1" ImageTop="223" />
+        <Button Tooltip="均衡器方案" CmdID="CMD_POPUPMENU_AUDIO_EQULIZER" AltCmdID="ID_EQULIZER_RESET" DownFlag="1" Left="128" Top="29" Width="81" Height="22" ImageLeft="1" ImageTop="280" />
+        <Label CmdID="CMD_EQ_PRESET_MESSAGE" Left="131" Top="29" Width="62" Height="22" FontName="Segoe UI SemiLight" FontSize="14" ColorX="31" ColorY="3" VertAlignment="1" />
+【预置】(右键提示)        
+        <Button Tooltip="预置 ┃ 默认" CmdID="CMD_POPUPMENU_EQULIZER_PRESET" AltCmdID="ID_EQULIZER_RESET" Left="231" Top="29" Width="66" Height="22" ImageLeft="247" ImageTop="280" />
+        <Label Text="$PRESET" Left="250" Top="30" Width="68" Height="20" FontName="Segoe UI SemiLight" FontSize="14"  TextColor="0xFFFFFF" VertAlignment="1" />
+        <Slider CmdID="CMD_EQULIZER_0" Vert="1" Left="25" Top="87" Width="15" Height="120" ImageWidth="14" ImageHeight="13" ImageLeft="3" ImageTop="38" BackImageLeft="20" BackImageTop="38" ThumbImageLeft="1" ThumbImageTop="52" ThumbWidth="14" ThumbHeight="25" TopMargin="4" BottomMargin="4" />
+	<Label Text="60" Left="25" Top="67" Width="22" Height="11" FontName="Segoe UI" FontSize="11" ColorX="45" ColorY="3" VertAlignment="1" />
+        <Slider CmdID="CMD_EQULIZER_1" Vert="1" Left="50" Top="87" Width="15" Height="120" ImageWidth="14" ImageHeight="13" ImageLeft="3" ImageTop="38" BackImageLeft="20" BackImageTop="38" ThumbImageLeft="1" ThumbImageTop="52" ThumbWidth="14" ThumbHeight="25" TopMargin="4" BottomMargin="4" />
+	<Label Text="170" Left="47" Top="67" Width="22" Height="11" FontName="Segoe UI" FontSize="11" ColorX="45" ColorY="3" VertAlignment="1" />
+        <Slider CmdID="CMD_EQULIZER_2" Vert="1" Left="75" Top="87" Width="15" Height="120" ImageWidth="14" ImageHeight="13" ImageLeft="3" ImageTop="38" BackImageLeft="20" BackImageTop="38" ThumbImageLeft="1" ThumbImageTop="52" ThumbWidth="14" ThumbHeight="25" TopMargin="4" BottomMargin="4" />
+	<Label Text="310" Left="72" Top="67" Width="22" Height="11" FontName="Segoe UI" FontSize="11" ColorX="45" ColorY="3" VertAlignment="1" />
+        <Slider CmdID="CMD_EQULIZER_3" Vert="1" Left="100" Top="87" Width="15" Height="120" ImageWidth="14" ImageHeight="13" ImageLeft="3" ImageTop="38" BackImageLeft="20" BackImageTop="38" ThumbImageLeft="1" ThumbImageTop="52" ThumbWidth="14" ThumbHeight="25" TopMargin="4" BottomMargin="4" />
+	<Label Text="600" Left="97" Top="67" Width="22" Height="11" FontName="Segoe UI" FontSize="11" ColorX="45" ColorY="3" VertAlignment="1" />
+        <Slider CmdID="CMD_EQULIZER_4" Vert="1" Left="125" Top="87" Width="15" Height="120" ImageWidth="14" ImageHeight="13" ImageLeft="3" ImageTop="38" BackImageLeft="20" BackImageTop="38" ThumbImageLeft="1" ThumbImageTop="52" ThumbWidth="14" ThumbHeight="25" TopMargin="4" BottomMargin="4" />
+	<Label Text="1K" Left="124" Top="67" Width="22" Height="11" FontName="Segoe UI" FontSize="11" ColorX="45" ColorY="3" VertAlignment="1" />
+        <Slider CmdID="CMD_EQULIZER_5" Vert="1" Left="150" Top="87" Width="15" Height="120" ImageWidth="14" ImageHeight="13" ImageLeft="3" ImageTop="38" BackImageLeft="20" BackImageTop="38" ThumbImageLeft="1" ThumbImageTop="52" ThumbWidth="14" ThumbHeight="25" TopMargin="4" BottomMargin="4" />
+	<Label Text="3K" Left="149" Top="67" Width="22" Height="11" FontName="Segoe UI" FontSize="11" ColorX="45" ColorY="3" VertAlignment="1" />
+        <Slider CmdID="CMD_EQULIZER_6" Vert="1" Left="175" Top="87" Width="15" Height="120" ImageWidth="14" ImageHeight="13" ImageLeft="3" ImageTop="38" BackImageLeft="20" BackImageTop="38" ThumbImageLeft="1" ThumbImageTop="52" ThumbWidth="14" ThumbHeight="25" TopMargin="4" BottomMargin="4" />
+	<Label Text="6K" Left="174" Top="67" Width="22" Height="11" FontName="Segoe UI" FontSize="11" ColorX="45" ColorY="3" VertAlignment="1" />
+        <Slider CmdID="CMD_EQULIZER_7" Vert="1" Left="200" Top="87" Width="15" Height="120" ImageWidth="14" ImageHeight="13" ImageLeft="3" ImageTop="38" BackImageLeft="20" BackImageTop="38" ThumbImageLeft="1" ThumbImageTop="52" ThumbWidth="14" ThumbHeight="25" TopMargin="4" BottomMargin="4" />
+	<Label Text="12K" Left="196" Top="67" Width="22" Height="11" FontName="Segoe UI" FontSize="11" ColorX="45" ColorY="3" VertAlignment="1" />
+        <Slider CmdID="CMD_EQULIZER_8" Vert="1" Left="225" Top="87" Width="15" Height="120" ImageWidth="14" ImageHeight="13" ImageLeft="3" ImageTop="38" BackImageLeft="20" BackImageTop="38" ThumbImageLeft="1" ThumbImageTop="52" ThumbWidth="14" ThumbHeight="25" TopMargin="4" BottomMargin="4" />
+	<Label Text="14K" Left="221" Top="67" Width="22" Height="11" FontName="Segoe UI" FontSize="11" ColorX="45" ColorY="3" VertAlignment="1" />
+        <Slider CmdID="CMD_EQULIZER_9" Vert="1" Left="250" Top="87" Width="15" Height="120" ImageWidth="14" ImageHeight="13" ImageLeft="3" ImageTop="38" BackImageLeft="20" BackImageTop="38" ThumbImageLeft="1" ThumbImageTop="52" ThumbWidth="14" ThumbHeight="25" TopMargin="4" BottomMargin="4" />
+	<Label Text="16K" Left="246" Top="67" Width="22" Height="11" FontName="Segoe UI" FontSize="11" ColorX="45" ColorY="3" VertAlignment="1" />
+        <Slider CmdID="CMD_MASTER_VOLUME" Vert="1" Left="275" Top="87" Width="15" Height="120" ImageWidth="14" ImageHeight="13" ImageLeft="3" ImageTop="38" BackImageLeft="37" BackImageTop="38" ThumbImageLeft="1" ThumbImageTop="52" ThumbWidth="14" ThumbHeight="25" TopMargin="4" BottomMargin="4" />
+	<Label Text="$VOL" Left="271" Top="67" Width="26" Height="11" FontName="Segoe UI" FontSize="11" ColorX="45" ColorY="3" VertAlignment="1" />
+      </Static>
+
+【视频设置】
+      <Static State="CMD_PAGE_CONTROL" PageIndex="1" Left="155" Width="313" Height="218" ImageTop="1" ImageLeft="235" ImageWidth="313" ImageHeight="218" >
+               <Label Text="$VIDEOSETTINGS" Left="-6" Top="14" Width="250" Height="20" ImageWidth="250" ImageHeight="20" FontName="Segoe UI SemiLight" FontSize="14" ColorX="45" ColorY="3" HoriAlignment="1" HoriCenter="1" />
+        <Image Left="15" Top="48" Width="17" Height="17" ImageWidth="17" ImageHeight="17" ImageLeft="1" ImageTop="130" />
+        <Image Left="15" Top="78" Width="20" Height="15" ImageWidth="15" ImageHeight="15" ImageLeft="0" ImageTop="83" />
+        <Image Left="15" Top="108" Width="20" Height="15" ImageWidth="15" ImageHeight="15" ImageLeft="0" ImageTop="98" />
+        <Image Left="15" Top="137" Width="20" Height="15" ImageWidth="15" ImageHeight="15" ImageLeft="0" ImageTop="114" />
+        <Label Text='亮  度: %s%%' CmdID='CMD_COLOR_OFFSET_MESSAGE' Left='46' Top='37' Width='206' Height='14' FontName='Segoe UI SemiLight' FontSize='12' TextColor='0xDBD9D9' HoriAlignment='0' />
+        <Slider CmdID="CMD_COLOR_OFFSET" Left="47" Top="51" Width="206" Height="12" ImageWidth="14" ImageHeight="10" ImageLeft="65" ImageTop="45" BackImageLeft="52" BackImageTop="45" ThumbImageLeft="1" ThumbImageTop="173" ThumbWidth="26" ThumbHeight="14" LeftMargin="4" RightMargin="4" />
+        <Label Text='对比度: %s%%' CmdID='CMD_COLOR_GAIN_MESSAGE' Left='46' Top='68' Width='206' Height='14' FontName='Segoe UI SemiLight' FontSize='12' TextColor='0xDBD9D9' HoriAlignment='0' />
+        <Slider CmdID="CMD_COLOR_GAIN" Left="47" Top="81" Width="206" Height="12" ImageWidth="14" ImageHeight="10" ImageLeft="65" ImageTop="45" BackImageLeft="52" BackImageTop="45" ThumbImageLeft="1" ThumbImageTop="173" ThumbWidth="26" ThumbHeight="14" LeftMargin="4" RightMargin="4" />
+        <Label Text='饱和度: %s%%' CmdID='CMD_COLOR_SAT_MESSAGE' Left='46' Top='98' Width='206' Height='14' FontName='Segoe UI SemiLight' FontSize='12' TextColor='0xDBD9D9' HoriAlignment='0' />  
+        <Slider CmdID="CMD_COLOR_SAT" Left="47" Top="110" Width="206" Height="12" ImageWidth="14" ImageHeight="10" ImageLeft="65" ImageTop="45" BackImageLeft="52" BackImageTop="45" ThumbImageLeft="1" ThumbImageTop="173" ThumbWidth="26" ThumbHeight="14" LeftMargin="4" RightMargin="4" />
+        <Label Text='色彩度: %s%%' CmdID='CMD_COLOR_HUE_MESSAGE' Left='46' Top='126' Width='206' Height='14' FontName='Segoe UI SemiLight' FontSize='12' TextColor='0xDBD9D9' HoriAlignment='0' />        
+        <Slider CmdID="CMD_COLOR_HUE" Left="47" Top="139" Width="206" Height="12" ImageWidth="14" ImageHeight="10" ImageLeft="65" ImageTop="45" BackImageLeft="52" BackImageTop="45" ThumbImageLeft="1" ThumbImageTop="173" ThumbWidth="26" ThumbHeight="14" LeftMargin="4" RightMargin="4" />
+        <Button Tooltip="亮  度: 默认" CmdID="CMD_COLOR_OFFSET_DEFAULT" Left="270" Top="46" Width="23" Height="22" ImageLeft="1" ImageTop="150" />
+        <Button Tooltip="对比度: 默认" CmdID="CMD_COLOR_GAIN_DEFAULT" Left="270" Top="75" Width="23" Height="22" ImageLeft="1" ImageTop="150" />
+        <Button Tooltip="饱和度: 默认" CmdID="CMD_COLOR_SAT_DEFAULT" Left="270" Top="104" Width="23" Height="22" ImageLeft="1" ImageTop="150" />
+        <Button Tooltip="色彩度: 默认" CmdID="CMD_COLOR_HUE_DEFAULT" Left="270" Top="134" Width="23" Height="22" ImageLeft="1" ImageTop="150" />
+        <Button CmdID="ID_VIDEO_SHARPEN" AutoVisible="-1" Left="15" Top="180" Width="18" Height="18" ImageLeft="20" ImageTop="96" />
+	<Button CmdID="ID_VIDEO_SHARPEN" AutoVisible="1" Left="15" Top="180" Width="18" Height="18" ImageLeft="20" ImageTop="130" />
+        <Label Text="$SHARPEN" Left="35" Top="179" Width="84" Height="18" FontName="Segoe UI SemiLight" FontSize="13" FontBold="0" TextColor="0xdbd9d9" />
+        <Button CmdID="ID_VIDEO_DENOISE_D" AutoVisible="-1" Left="105" Top="180" Width="18" Height="18" ImageLeft="20" ImageTop="96" />
+	<Button CmdID="ID_VIDEO_DENOISE_D" AutoVisible="1" Left="105" Top="180" Width="18" Height="18" ImageLeft="20" ImageTop="130" />
+        <Label Text="$DENOISE3D" Left="125" Top="180" Width="84" Height="18" FontName="Segoe UI SemiLight" FontSize="13" FontBold="0" TextColor="0xdbd9d9" />
+        <Button CmdID="ID_VIDEO_POSTPROC" AutoVisible="-1" Left="215" Top="180" Width="18" Height="18" ImageLeft="20" ImageTop="96" />
+	<Button CmdID="ID_VIDEO_POSTPROC" AutoVisible="1" Left="215" Top="180" Width="18" Height="18" ImageLeft="20" ImageTop="130" />
+        <Label Text="$DEBLOCK" Left="235" Top="180" Width="84" Height="18" FontName="Segoe UI SemiLight" FontSize="13" FontBold="0" TextColor="0xdbd9d9" />
+      </Static>
+
+【字幕设置】
+      <Static State="CMD_PAGE_CONTROL" PageIndex="2" Left="155" Width="313" Height="218" ImageTop="1" ImageLeft="235" ImageWidth="313" ImageHeight="218" >
+        <Button Tooltip="打开字幕" CmdID="ID_CAPTION_OPEN" Left="22" Top="30" Width="75" ImageWidth="75" Height="23" ImageHeight="23" ImageLeft="148" ImageTop="327" />
+        <Button Tooltip="字幕: 显示 ┃ 隐藏" CmdID="ID_CAPTION_VISIBLE" Left="112" Top="30" Width="75" ImageWidth="75" Height="23" ImageHeight="23" ImageLeft="148" ImageTop="327"/>
+        <Button Tooltip="保存字幕" CmdID="CMD_POPUPMENU_CAPTION_SAVE" Left="202" Top="30" Width="75" ImageWidth="75" Height="23" ImageHeight="23" ImageLeft="148" ImageTop="327" />
+        <Button Tooltip="字幕位置: 上移" CmdID="ID_CAPTION_MOVE_UP" Left="222" Top="112" Width="27" Height="27" ImageLeft="86" ImageTop="351" />
+        <Image Left="227" Top="118" Width="18" Height="15" ImageLeft="42" ImageTop="64" ImageWidth="18" ImageHeight="10" />
+        <Button Tooltip="字幕位置: 左移" CmdID="ID_CAPTION_MOVE_LEFT" Left="193" Top="139" Width="27" Height="27" ImageLeft="86" ImageTop="351" />
+        <Image Left="201" Top="142" Width="15" Height="18" ImageLeft="60" ImageTop="64" ImageWidth="10" ImageHeight="18" />
+        <Button Tooltip="字幕位置: 右移" CmdID="ID_CAPTION_MOVE_RIGHT"  Left="250" Top="139" Width="27" Height="27" ImageLeft="86" ImageTop="351" />
+        <Image Left="260" Top="142" Width="15" Height="18" ImageLeft="70" ImageTop="64" ImageWidth="10" ImageHeight="18"  />
+        <Button Tooltip="字幕位置: 默认" CmdID="ID_CAPTION_RESET_POS" Left="222" Top="139" Width="27" Height="27" ImageLeft="86" ImageTop="351" />
+        <Image Left="230" Top="145" Width="13" Height="13" ImageLeft="20" ImageTop="115" ImageWidth="13" ImageHeight="13"  />
+        <Button Tooltip="字幕位置: 下移" CmdID="ID_CAPTION_MOVE_DOWN" Left="222" Top="166" Width="27" Height="27" ImageLeft="86" ImageTop="351" />
+        <Image Left="227" Top="175" Width="18" Height="15" ImageLeft="42" ImageTop="74" ImageWidth="18" ImageHeight="10" />
+	<Label Text="$FONT" Left="21" Top="82" Width="85" Height="22" FontName="Segoe UI SemiLight" FontSize="14" FontBold="0" TextColor="0xdbd9d9" />
+        <Button Tooltip="选择字体" CmdID="ID_CAPTION_FONT_SELECT" Left="64" Top="79" Width="110" Height="22" ImageLeft="1" ImageTop="304" />
+        <Label CmdID="CMD_CAPTION_FONT_MESSAGE" Left="70" Top="80" Width="79" Height="22" FontName="Segoe UI SemiLight" FontSize="14" ColorX="45" ColorY="3"  />
+        <Image Left="65" Top="128" Width="52" Height="22" ImageLeft="334" ImageTop="304" ImageWidth="52" ImageHeight="22" />
+        <Label CmdID="CMD_CAPTION_SIZE_MESSAGE" Left="75" Top="128" Width="29" Height="22" FontName="Segoe UI SemiLight" FontSize="14"  VertAlignment="1" TextColor="0xFFFFFF" />
+        <Button Tooltip="增大字号" CmdID="ID_CAPTION_INC_SIZE" Left="101" Top="128" Width="16" Height="12" ImageHeight="12" ImageLeft="387" ImageTop="304" />
+        <Button Tooltip="减小字号" CmdID="ID_CAPTION_DEC_SIZE" Left="101" Top="139" Width="16" Height="12" ImageHeight="12" ImageLeft="387" ImageTop="315" />
+        <Button Tooltip="滞后 0.5 秒" CmdID="ID_CAPTION_SLOW_SYNC" Left="65" Top="174" Width="28" Height="23" ImageLeft="1" ImageTop="351" />
+        
+	<Image Left="72" Top="174" Width="35" ImageWidth='13' ImageHeight='19' ImageLeft='1' ImageTop='204' />
+        <Button Tooltip="超前 0.5 秒" CmdID="ID_CAPTION_FAST_SYNC" Left="98" Top="174" Width="28" Height="23" ImageLeft="1" ImageTop="351" />
+	<Image Left="105" Top="174" Width="35" ImageWidth='19' ImageHeight='19' ImageLeft='20' ImageTop='204' />
+        <Button Tooltip="字幕同步: 复位" CmdID="ID_CAPTION_RESET_SYNC" Left="132" Top="177" Width="23" Height="22" ImageLeft="1" ImageTop="150"/>
+	<Label Text="$SIZE" Left="21" Top="131" Width="85" Height="22" FontName="Segoe UI SemiLight" FontSize="14" FontBold="0" TextColor="0xdbd9d9"/>
+	<Label Text="$SUBTITLE_SYNC" Left="21" Top="178" Width="85" Height="22" FontName="Segoe UI SemiLight" FontSize="14" FontBold="0" TextColor="0xdbd9d9" />
+	#if<LocaleName==Italian>
+        <Label Text="Apri" Left="47" Top="31" Width="66" Height="22" FontName="Segoe UI SemiLight" FontSize="14"  VertAlignment="1" TextColor="0xFFFFFF" />
+	<Label Text="Nascondi" Left="122" Top="31" Width="66" Height="22" FontName="Segoe UI SemiLight" FontSize="14"  VertAlignment="1" TextColor="0xFFFFFF" />
+	<Label Text="Salva" Left="224" Top="31" Width="66" Height="22" FontName="Segoe UI SemiLight" FontSize="14"  VertAlignment="1" TextColor="0xFFFFFF" />
+	<Label Text="Sposta" Left="216" Top="80" Width="85" Height="22" FontName="Segoe UI SemiLight" FontSize="14" FontBold="0" TextColor="0xdbd9d9" />
+	#else
+	<Label Text="打开" Left="46" Top="31" Width="66" Height="22" FontName="Segoe UI SemiLight" FontSize="14"  VertAlignment="1" TextColor="0xFFFFFF" />
+	<Label Text="隐藏" Left="135" Top="31" Width="66" Height="22" FontName="Segoe UI SemiLight" FontSize="14" VertAlignment="1" TextColor="0xFFFFFF" />
+	<Label Text="保存" Left="226" Top="31" Width="66" Height="22" FontName="Segoe UI SemiLight" FontSize="14"  VertAlignment="1" TextColor="0xFFFFFF" />
+	<Label Text="字幕位置" Left="208" Top="82" Width="85" Height="22" FontName="Segoe UI SemiLight" FontSize="14" FontBold="0" TextColor="0xdbd9d9" />
+	#endif
+      </Static>
+
+【播放设置】
+      <Static State="CMD_PAGE_CONTROL" PageIndex="3" Left="155" Width="313" Height="218" ImageTop="1" ImageLeft="235" ImageWidth="313" ImageHeight="218" >
+	<Label Text="$PLAYBACKSETTINGS" Left="-5" Top="14" Width="250" Height="20" ImageWidth="250" ImageHeight="20" FontName="Segoe UI SemiLight" FontSize="14" ColorX="45" ColorY="3" HoriAlignment="1" HoriCenter="1" />
+        <Button CmdID="ID_PLAY_SPEED_SLOWER" Left="73" Top="70" Width="75" Height="23" ImageLeft="148" ImageTop="327" />
+        <Button CmdID="ID_PLAY_SPEED_FASTER" Left="154" Top="70" Width="75" Height="23" ImageLeft="148" ImageTop="327" />
+        <Button Tooltip="播放速度: 重置" CmdID="ID_PLAY_SPEED_NORMAL"Left="235" Top="72" Width="23" Height="22" ImageLeft="1" ImageTop="150"/>
+        <Button Tooltip="快退 1 分钟" CmdID="ID_PLAYBACK_1MIN_BACK" Left="73" Top="122" Width="49" Height="23" ImageLeft="0" ImageTop="327" />
+        <Image Left="91" Top="127" Width="13" Height="15" ImageWidth="13" ImageHeight="15" ImageLeft="490" ImageTop="225" />
+        <Button Tooltip="快退 5 秒" CmdID="ID_PLAYBACK_5SEC_BACK" AltCmdID="ID_PLAY_PREV_FRAME" Left="128" Top="122" Width="49" Height="23" ImageLeft="0" ImageTop="327" />
+        <Image Left="145" Top="127" Width="13" Height="15" ImageWidth="13" ImageHeight="15" ImageLeft="465" ImageTop="225" />
+        <Button Tooltip="快进 5 秒" CmdID="ID_PLAYBACK_5SEC_FORW" AltCmdID="ID_PLAY_NEXT_FRAME" Left="183" Top="122" Width="49" Height="23" ImageLeft="0" ImageTop="327" />
+        <Image Left="202" Top="127" Width="13" Height="15" ImageWidth="13" ImageHeight="15" ImageLeft="476" ImageTop="225" />
+        <Button Tooltip="快进 1 分钟" CmdID="ID_PLAYBACK_1MIN_FORW" Left="238" Top="122" Width="49" Height="23" ImageLeft="0" ImageTop="327" />
+        <Image Left="257" Top="127" Width="13" Height="15" ImageWidth="13" ImageHeight="15" ImageLeft="508" ImageTop="225" />
+        <Button Tooltip="起点" CmdID="ID_PLAY_REPEAT_START_SET" Left="73" Top="175" Width="32" Height="22" ImageLeft="449" ImageTop="280" />
+        <Label Text="A" Left="85" Top="175" Width="20" Height="22" FontName="Segoe UI SemiLight" FontSize="12" FontBold="0" VertAlignment="1" TextColor="0xFFFFFF" />
+        <Image Left="105" Top="175" Width="60" Height="22" ImageLeft="253" ImageTop="280" ImageWidth="60" ImageHeight="22" />
+        <Label CmdID="CMD_REPEAT_START_MESSAGE" Left="106" Top="176" Width="57" Height="20" FontName="Segoe UI SemiLight" FontSize="12" FontBold="0" TextColor="0xFFFFFF" VertAlignment="1" HoriAlignment="1" />
+        <Image Left="172" Top="175" Width="60" Height="22" ImageLeft="247" ImageTop="280" ImageWidth="60" ImageHeight="22" />
+        <Label CmdID="CMD_REPEAT_END_MESSAGE" Left="174" Top="176" Width="57" Height="20" FontName="Segoe UI SemiLight" FontSize="12"FontBold="0" TextColor="0xFFFFFF" VertAlignment="1" HoriAlignment="1" />
+        <Button Tooltip="终点" CmdID="ID_PLAY_REPEAT_STOP_SET" Left="232" Top="175" Width="32" Height="22" ImageLeft="449" ImageTop="280" />
+        <Label Text="B" Left="245" Top="175" Width="20" Height="22" FontName="Segoe UI SemiLight" FontSize="12" FontBold="0" VertAlignment="1" TextColor="0xFFFFFF" />
+        <Button  Tooltip="解除循环" CmdID="ID_PLAY_REPEAT_RESET" Left="269" Top="177" Width="23" Height="22" ImageLeft="1" ImageTop="150"/>
+	<Label Text="$SPEED" Left="12" Top="70" Width="56" Height="22" FontName="Segoe UI SemiLight" FontSize="14" FontBold="0" VertAlignment="1" TextColor="0xdbd9d9" />
+	<Label Text="$SEEK" Left="12" Top="122" Width="58" Height="22" FontName="Segoe UI SemiLight" FontSize="14" FontBold="0" VertAlignment="1" TextColor="0xdbd9d9" />
+【区段循环】
+	<Label Text="$REPEAT" Left="12" Top="174" Width="72" Height="22" FontName="Segoe UI SemiLight" FontSize="14" VertAlignment="1" TextColor="0xdbd9d9" />
+	#if<LocaleName==Italian>
+	<Label Text="Più lento" Left="85" Top="72" Width="66" Height="22" FontName="Segoe UI SemiLight" FontSize="14" TextColor="0xFFFFFF" />
+	<Label Text="Più veloce" Left="161" Top="72" Width="66" Height="22" FontName="Segoe UI SemiLight" FontSize="14" TextColor="0xFFFFFF" />
+	#else
+	<Label Text="慢放" Left="97" Top="71" Width="66" Height="22" FontName="Segoe UI SemiLight" FontSize="14" VertAlignment="1" TextColor="0xFFFFFF" />
+	<Label Text="快放" Left="178" Top="71" Width="66" Height="22" FontName="Segoe UI SemiLight" FontSize="14" VertAlignment="1" TextColor="0xFFFFFF" />
+	#endif
+      </Static>
+
+【宽高比设置】
+      <Static State="CMD_PAGE_CONTROL" PageIndex="4" Left="155" Width="313" Height="218" ImageTop="1" ImageLeft="235" ImageWidth="313" ImageHeight="218" >
+        <Button Tooltip="画面: 上移" CmdID="ID_PANSCAN_MOVEUP" Left="44" Top="54" Width="27" Height="27" ImageLeft="86" ImageTop="351" />
+        <Image Left="49" Top="60" Width="18" Height="15" ImageLeft="42" ImageTop="64" ImageWidth="18" ImageHeight="10" />
+        <Button Tooltip="画面: 左移" CmdID="ID_PANSCAN_MOVELEFT" Left="15" Top="80" Width="27" Height="27" ImageLeft="86" ImageTop="351" />
+        <Image Left="23" Top="83" Width="15" Height="18" ImageLeft="60" ImageTop="64" ImageWidth="10" ImageHeight="18" />
+        <Button  Tooltip="画面位置: 复位" CmdID="ID_PANSCAN_RESET" Left="44" Top="80" Width="27" Height="27" ImageLeft="86" ImageTop="351" />
+        <Image Left="52" Top="86" Width="13" Height="13" ImageLeft="20" ImageTop="115" ImageWidth="13" ImageHeight="13"  />
+        <Button Tooltip="画面: 右移" CmdID="ID_PANSCAN_MOVERIGHT" Left="72" Top="80" Width="27" Height="27" ImageLeft="86" ImageTop="351" />
+        <Image Left="82" Top="83" Width="15" Height="18" ImageLeft="70" ImageTop="64" ImageWidth="10" ImageHeight="18"  />
+        <Button Tooltip="画面: 下移" CmdID="ID_PANSCAN_MOVEDOWN" Left="44" Top="107" Width="27" Height="27" ImageLeft="86" ImageTop="351" />
+        <Image Left="49" Top="116" Width="18" Height="15" ImageLeft="42" ImageTop="74" ImageWidth="18" ImageHeight="10" />
+        <Button Tooltip="增加高度" CmdID="ID_PANSCAN_INCHEIGHT" Left="241" Top="54" Width="27" Height="27" ImageLeft="86" ImageTop="351" />
+        <Image Left="246" Top="60" Width="18" Height="15" ImageLeft="42" ImageTop="64" ImageWidth="18" ImageHeight="10"/>
+        <Button Tooltip="减少宽度" CmdID="ID_PANSCAN_DECWIDTH" Left="212" Top="80" Width="27" Height="27" ImageLeft="86" ImageTop="351" />
+        <Image Left="220" Top="83" Width="15" Height="18" ImageLeft="60" ImageTop="64" ImageWidth="10" ImageHeight="18" />
+        <Button Tooltip="画面缩放: 复位" CmdID="ID_PANSCAN_RESET" Left="241" Top="80" Width="27" Height="27" ImageLeft="86" ImageTop="351" />
+        <Image Left="249" Top="86" Width="13" Height="13" ImageLeft="20" ImageTop="115" ImageWidth="13" ImageHeight="13"  />
+        <Button Tooltip="增加宽度" CmdID="ID_PANSCAN_INCWIDTH" Left="269" Top="80" Width="27" Height="27" ImageLeft="86" ImageTop="351" />
+        <Image Left="279" Top="83" Width="15" Height="18" ImageLeft="70" ImageTop="64" ImageWidth="10" ImageHeight="18"  />
+        <Button Tooltip="减少高度" CmdID="ID_PANSCAN_DECHEIGHT" Left="241" Top="107" Width="27" Height="27" ImageLeft="86" ImageTop="351" />
+        <Image Left="246" Top="116" Width="18" Height="15" ImageLeft="42" ImageTop="74" ImageWidth="18" ImageHeight="10" />
+	#if<LocaleName==Italian>
+        <Label Text="Sposta" Left="37" Top="25" Width="250" Height="20" ImageWidth="250" ImageHeight="20" FontName="Segoe UI SemiLight" FontSize="14" TextColor="0xdbd9d9" />
+        <Label Text="Rapporto" Left="128" Top="25" Width="250" Height="20" ImageWidth="250" ImageHeight="20" FontName="Segoe UI SemiLight" FontSize="14" TextColor="0xdbd9d9" />
+        <Label Text="Adatta" Left="235" Top="25" Width="250" Height="20" ImageWidth="250" ImageHeight="20" FontName="Segoe UI SemiLight" FontSize="14" TextColor="0xdbd9d9" />
+        <Label Text="Ridimensiona" Left="115" Top="147" Width="250" Height="20" ImageWidth="250" ImageHeight="20" FontName="Segoe UI SemiLight" FontSize="14" TextColor="0xdbd9d9" />
+	#else
+【画面偏移】
+	<Label Text="画面偏移" Left="30" Top="25" Width="250" Height="20" ImageWidth="250" ImageHeight="20" FontName="Segoe UI SemiLight" FontSize="14" TextColor="0xdbd9d9" />
+【宽高比】
+	<Label Text="宽高比" Left="136" Top="25" Width="250" Height="20" ImageWidth="250" ImageHeight="20" FontName="Segoe UI SemiLight" FontSize="14" TextColor="0xdbd9d9" />
+【画面缩放】
+	<Label Text="画面缩放" Left="227" Top="25" Width="250" Height="20" ImageWidth="250" ImageHeight="20" FontName="Segoe UI SemiLight" FontSize="14" TextColor="0xdbd9d9" />
+【调整大小】
+	<Label Text="调整大小" Left="127" Top="147" Width="250" Height="20" ImageWidth="250" ImageHeight="20" FontName="Segoe UI SemiLight" FontSize="14" TextColor="0xdbd9d9" />
+	#endif
+        <Button CmdID="ID_SOURCE_RATIO" Left="116" Top="53" Width="38" Height="26" ImageLeft="169" ImageTop="351" />
+        <Label Text="1:1" Left="126" Top="54" Width="35" Height="22" FontName="Segoe UI" FontSize="13" VertAlignment="1" TextColor="0xFFFFFF" />
+        <Button CmdID="ID_4_3_RATIO" Left="159" Top="53" Width="38" Height="26" ImageLeft="169" ImageTop="351" />
+        <Label Text="4:3" Left="169" Top="54" Width="35" Height="22" FontName="Segoe UI" FontSize="13" VertAlignment="1" TextColor="0xFFFFFF" />
+        <Button CmdID="ID_16_9_RATIO" Left="116" Top="80" Width="38" Height="26" ImageLeft="169" ImageTop="351" />
+        <Label Text="16:9" Left="123" Top="81" Width="35" Height="22" FontName="Segoe UI" FontSize="13" VertAlignment="1" TextColor="0xFFFFFF" />
+        <Button CmdID="ID_16_10_RATIO" Left="159" Top="80" Width="38" Height="26" ImageLeft="169" ImageTop="351" />
+        <Label Text="16:10" Left="162" Top="81" Width="35" Height="22" FontName="Segoe UI" FontSize="13" VertAlignment="1" TextColor="0xFFFFFF" />
+        <Button CmdID="ID_185_1_RATIO" Left="116" Top="107" Width="38" Height="26" ImageLeft="169" ImageTop="351" />
+        <Label Text="1.85:1" Left="118" Top="108" Width="35" Height="22" FontName="Segoe UI" FontSize="13" VertAlignment="1" TextColor="0xFFFFFF" />
+        <Button CmdID="ID_235_1_RATIO" Left="159" Top="107" Width="38" Height="26"  ImageLeft="169" ImageTop="351" />
+        <Label Text="2.35:1" Left="161" Top="108" Width="35" Height="22" FontName="Segoe UI" FontSize="13" VertAlignment="1" TextColor="0xFFFFFF" />
+        <Button Tooltip="画面: 缩小" CmdID="ID_PANSCAN_DECSIZE" Left="93" Top="175" Width="38" Height="26" ImageLeft="169" ImageTop="351" />
+        <Image Left="105" Top="175" Width="35" ImageWidth='13' ImageHeight='19' ImageLeft='1' ImageTop='204' />
+        <Button Tooltip="画面大小: 复位" CmdID="ID_PANSCAN_RESET" Left="136" Top="175" Width="38" Height="26" ImageLeft="169" ImageTop="351" />
+        <Label Text="重置" Left="141" Top="176" Width="35" Height="22" FontName="Segoe UI SemiLight" FontSize="14" VertAlignment="1" TextColor="0xFFFFFF" />
+        <Button Tooltip="画面: 放大" CmdID="ID_PANSCAN_INCSIZE" Left="179" Top="175" Width="38" Height="26" ImageLeft="169" ImageTop="351" />
+        <Image Left="191" Top="175" Width="35" ImageWidth='19' ImageHeight='19' ImageLeft='20' ImageTop='204' />
+      </Static>
+    </Static>
+  </Control>
+</ControlBoxSkinArea>
+
+<PlaylistSkinArea Image="Main.png" AlphaMode="1" UseWindowFrame="0" WidthLimit="300" HeightLimit="135"
+	BkgndColor1X="701" BkgndColor1Y="1" BkgndColor2X="705" BkgndColor2Y="1"
+	TextColorX="701" TextColorY="12"
+	CurTextColorX="701" CurTextColorY="9"
+	PlayedTextColorX="709" PlayedTextColorY="5"
+	SelTextColorX="709" SelTextColorY="5"	SelBkgndColorX="705" SelBkgndColorY="9"
+	FrameColorX="709" FrameColorY="9"
+	AlbumTabX="722" AlbumTabY="260" AlbumTabW="77" AlbumTabH="26"
+	AlbumTabBtnX="492" AlbumTabBtnY="301" AlbumTabBtnW="77" AlbumTabBtnH="26"
+	AlbumTabBtnMargin="-1"
+	AlbumTabTextX="701" AlbumTabTextY="13" AlbumTabSelTextX="705" AlbumTabSelTextY="13"
+	AlbumTabDelX="559" AlbumTabDelY="268" AlbumTabDelW="7" AlbumTabDelH="7"
+	AlbumTabLeftX="676" AlbumTabLeftY="264" AlbumTabLeftW="15" AlbumTabLeftH="25"
+	AlbumTabRightX="621" AlbumTabRightY="264" AlbumTabRightW="15" AlbumTabRightH="25"
+	AlbumTabPopupX="559" AlbumTabPopupY="275" AlbumTabPopupW="15" AlbumTabPopupH="25"
+	SearchIconX="388" SearchIconY="129" SearchIconW="15" SearchIconH="15"
+	SearchIconSelX="403" SearchIconSelY="129" SearchIconSelW="15" SearchIconSelH="15"
+	SearchBkgndColorX="702" SearchBkgndColorY="21" SearchSelBkgndColorX="702" SearchSelBkgndColorY="21"
+>
+	<Control>
+
+		<Static Align="Top" Height="31" ImageLeft="0" ImageTop="0" ImageWidth="17" ImageHeight="31" AltImageLeft="809" AltImageTop="0" LeftMargin="1" RightMargin="1" IsTitleBar="1" UsingRgn="1" >
+			<Button Tooltip="$ID_PLAYLIST_WINDOW" CmdID="ID_PLAYLIST_WINDOW" Left="-32" Top="1" Width="31" Height="29" ImageLeft="438" ImageTop="0" />
+		</Static>
+		<Static Align="Left" Width="1" ImageLeft="0" ImageTop="1" ImageWidth="1" ImageHeight="108" AltImageLeft="809" AltImageTop="1" TopMargin="31" BottomMargin="65" UsingRgn="0" />
+		<Static Align="Right" Width="1" ImageLeft="16" ImageTop="1" ImageWidth="1" ImageHeight="108" AltImageLeft="825" AltImageTop="1" TopMargin="31" BottomMargin="65" UsingRgn="0" />
+		<Static Align="Bottom" Height="1" ImageLeft="0" ImageTop="109" ImageWidth="17" ImageHeight="1" AltImageLeft="809" AltImageTop="109" LeftMargin="1" RightMargin="1" UsingRgn="0" />
+
+		<Static Align="Client" Contain="CMD_PLAYLIST_HOLDER" >
+			<Static Align="Bottom" Height="35" ImageLeft="786" ImageTop="73" ImageWidth="11" ImageHeight="35" LeftMargin="2" RightMargin="2" UsingRgn="0" >
+			<Button Tooltip="$CMD_ATTACH_PLAYLIST_OFF" CmdID="CMD_ATTACH_PLAYLIST_OFF" Left="5" Top="-29" Width="17" Height="24" ImageLeft="585" ImageTop="229" />
+			<Button Tooltip="$CMD_ATTACH_PLAYLIST_ON" CmdID="CMD_ATTACH_PLAYLIST_ON" Left="5" Top="-29" Width="17" Height="24" ImageLeft="513" ImageTop="229" />
+			<Button Tooltip="$CMD_PLAYLIST_ADD" CmdID="CMD_PLAYLIST_ADD" AltCmdID="CMD_POPUP_USER_MENU" AltUserMenuName="AddMenu" Left="-109" Top="-29" Width="25" Height="24" ImageLeft="583" ImageTop="161" />
+			<Button Tooltip="$ID_PLAYLIST_DEL" CmdID="ID_PLAYLIST_DEL" AltCmdID="CMD_PLAYLIST_DEL" Left="-82" Top="-29" Width="25" Height="24" ImageLeft="694" ImageTop="161" />
+			<Button Tooltip="$ID_PLAYLIST_DEL_ALL" CmdID="ID_PLAYLIST_DEL_ALL" Left="-55" Top="-29" Width="25" Height="24" ImageLeft="694" ImageTop="191" />
+			<Button Tooltip="$CMD_POPUPMENU_PLAY_REPEAT2" CmdID="CMD_POPUPMENU_PLAY_REPEAT2" AltCmdID="CMD_POPUP_USER_MENU" AltUserMenuName="PlayModeMenu" Left="-28" Top="-29" Width="25" Height="24" ImageLeft="583" ImageTop="191" />
+			<Image Left='28' Top='-28' Width='-116' Height='23' ImageLeft='700' ImageTop='19' ImageWidth='10' ImageHeight='10' LeftMargin='1' RightMargin='1' TopMargin='1' BottomMargin='1'>
+				<Layout Contain='CMD_PLAY_LIST_SEARCH' Align='Client' BottomOffset='1' LeftOffset='1' TopOffset='1' WidthOffset='-2' HeightOffset='-2' />
+			</Image>
+			</Static>
+
+		<Static Align="Client" Contain="CMD_PLAY_LIST_ALBUM_TAB" />
+		</Static>
+	</Control>
+</PlaylistSkinArea>
+
+	<ScrollBarPlaylist Name='ScrollBarPL.bmp' SizingGripperX='83' SizingGripperY='83' Length='17' Width='16' >
+		<HorzNormal>
+			<ArrowLeft Left='0' Top='0' Width='17' Height='16' />
+			<ArrowRight Left='1' Top='22' Width='17' Height='16' />
+			<PageLeft Left='3' Top='83' Width='3' Height='16' />
+			<PageRight Left='4' Top='83' Width='3' Height='16' />
+			
+			<ThumbLeft Left='48' Top='0' Width='4' Height='16' />
+			<ThumbMiddleLeft Left='52' Top='0' Width='1' Height='16' />
+			<ThumbMiddle Left='53' Top='0' Width='9' Height='16' />
+			<ThumbMiddleRight Left='62' Top='0' Width='1' Height='16' />
+			<ThumbRight Left='63' Top='0' Width='4' Height='16' />
+		</HorzNormal>
+		
+		<HorzActive>
+			<ArrowLeft Left='22' Top='0' Width='17' Height='16' />
+			<ArrowRight Left='23' Top='22' Width='17' Height='16' />
+			<PageLeft Left='3' Top='83' Width='3' Height='16' />
+			<PageRight Left='4' Top='83' Width='3' Height='16' />
+			
+			<ThumbLeft Left='48' Top='22' Width='4' Height='16' />
+			<ThumbMiddleLeft Left='52' Top='22' Width='1' Height='16' />
+			<ThumbMiddle Left='53' Top='22' Width='9' Height='16' />
+			<ThumbMiddleRight Left='62' Top='22' Width='1' Height='16' />
+			<ThumbRight Left='63' Top='22' Width='4' Height='16' />
+		</HorzActive>
+		
+		<VertNormal>
+			<ArrowUp Left='72' Top='0' Width='16' Height='17' />
+			<ArrowDown Left='72' Top='23' Width='16' Height='17' />
+			<PageUp Left='0' Top='111' Width='16' Height='2' />
+			<PageDown Left='0' Top='112' Width='16' Height='2' />
+			
+			<ThumbUp Left='126' Top='0' Width='16' Height='4' />
+			<ThumbMiddleUp Left='126' Top='4' Width='16' Height='1' />
+			<ThumbMiddle Left='126' Top='5' Width='16' Height='9' />
+			<ThumbMiddleDown Left='126' Top='14' Width='16' Height='1' />
+			<ThumbDown Left='126' Top='15' Width='16' Height='4' />
+		</VertNormal>
+
+		<VertActive>
+			<ArrowUp Left='104' Top='0' Width='16' Height='17' />
+			<ArrowDown Left='104' Top='23' Width='16' Height='17' />
+			<PageUp Left='0' Top='111' Width='16' Height='2' />
+			<PageDown Left='0' Top='112' Width='16' Height='2' />
+			
+			<ThumbUp Left='126' Top='39' Width='16' Height='4' />
+			<ThumbMiddleUp Left='126' Top='43' Width='16' Height='1' />
+			<ThumbMiddle Left='126' Top='44' Width='16' Height='9' />
+			<ThumbMiddleDown Left='126' Top='53' Width='16' Height='1' />
+			<ThumbDown Left='126' Top='54' Width='16' Height='4' />
+		</VertActive>
+	</ScrollBarPlaylist>
+
+<1stCaptureSkinArea Image="ScrCapture.png" AlphaMode="1" UseWindowFrame="0" Width="120" Height="50" WidthLimit="120" HeightLimit="50" >
+	<Control>
+		<Static Align="Top" Height="31" ImageWidth="17" ImageHeight="31" AltImageLeft="393" AltImageTop="0" LeftMargin="6" RightMargin="6" UsingRgn="0" >
+			<Button CmdID="CMD_CAPTURE1ST_SELECT_ON" Left="6" Top="8" Width="10" Height="10" ImageLeft="33" ImageTop="31" />
+			<Button CmdID="CMD_CAPTURE1ST_SELECT_OFF" Left="6" Top="8" Width="10" Height="10" ImageLeft="33" ImageTop="46" />
+			<Label Text="$CAMERA_1" Left="22" Top="2" Height="21" FontName="Segoe UI" FontSize="13" FontBold="0" TextColor="0xe0e0e0" VertAlignment="1" />
+			<Button Tooltip="$CMD_CAPTURE2ND_SHOW" CmdID="CMD_CAPTURE2ND_SHOW" Left="86" Top="4" Width="26" Height="18" ImageLeft="33" ImageTop="61" VisParentMinWidth="150" />
+			<Button Tooltip="$CMD_CAPTURE2ND_HIDE" CmdID="CMD_CAPTURE2ND_HIDE" Left="86" Top="4" Width="26" Height="17" ImageLeft="33" ImageTop="86" VisParentMinWidth="150" />
+
+			<Button Tooltip="$CMD_CAPTURE1ST_PRIMARY_ON" CmdID="CMD_CAPTURE1ST_PRIMARY_ON" Left="-163" Top="9" Width="17" Height="16" ImageLeft="329" ImageTop="59" VisParentMinWidth="300" />
+			<Button Tooltip="$CMD_CAPTURE1ST_PRIMARY_OFF" CmdID="CMD_CAPTURE1ST_PRIMARY_OFF" Left="-163" Top="9" Width="17" Height="16" ImageLeft="329" ImageTop="39" VisParentMinWidth="300" />
+			<Button Tooltip="$CMD_CAPTURE_PIP_SETTING" CmdID="CMD_CAPTURE_PIP_SETTING" Left="-119" Top="9" Width="17" Height="16" ImageLeft="329" ImageTop="19" VisParentMinWidth="280" />
+			<Button Tooltip="$CMD_CAPTURE_FINDWND" CmdID="CMD_CAPTURE1ST_FINDWND" Left="-143" Top="7" Width="17" Height="17" ImageLeft="329" VisParentMinWidth="260" />
+			<Button Tooltip="$CMD_CAPTURE_OPTIMIZE_SIZE" CmdID="CMD_CAPTURE1ST_OPTIMIZE_SIZE" Left="-99" Top="6" Width="30" Height="20" ImageLeft="192" ImageTop="49" VisParentMinWidth="240" />
+			<Button Tooltip="$CMD_CAPTURE_FULLSCREEN" CmdID="CMD_CAPTURE1ST_FULLSCREEN" Left="-68" Top="6" Width="30" Height="20" ImageLeft="192" VisParentMinWidth="210" />
+			<Button Tooltip="$CMD_CAPTURE_NORMALSCREEN" CmdID="CMD_CAPTURE1ST_NORMALSCREEN" Left="-68" Top="6" Width="30" Height="20" ImageLeft="192" ImageTop="25" VisParentMinWidth="180" />
+			<Button Tooltip="$CMD_CAPTURE1ST_HIDE" CmdID="CMD_CAPTURE1ST_HIDE" Left="-32" Top="1" Width="31" Height="29" ImageLeft="30" />
+		</Static>
+
+		<Static Align="Bottom" Height="1" ImageTop="109" ImageWidth="17" ImageHeight="1" AltImageLeft="393" AltImageTop="109" LeftMargin="6" RightMargin="6" UsingRgn="0" />
+		<Static Align="Left" Width="1" ImageTop="32" ImageWidth="1" ImageHeight="76" TopMargin="2" BottomMargin="72" AltImageLeft="393" AltImageTop="32" UsingRgn="0" />
+		<Static Align="Right" Width="1" ImageLeft="16" ImageTop="32" ImageWidth="1" ImageHeight="76" TopMargin="2" BottomMargin="72" AltImageLeft="409" AltImageTop="32" UsingRgn="0" />
+	</Control>
+</1stCaptureSkinArea>
+
+<2ndCaptureSkinArea Image="ScrCapture.png" AlphaMode="1" UseWindowFrame="0" Width="120" Height="50" WidthLimit="120" HeightLimit="50" >
+	<Control>
+		<Static Align="Top" Height="31" ImageWidth="17" ImageHeight="31" AltImageLeft="393" AltImageTop="0" LeftMargin="6" RightMargin="6" UsingRgn="0" >
+			<Button CmdID="CMD_CAPTURE2ND_SELECT_ON" Left="6" Top="8" Width="10" Height="10" ImageLeft="33" ImageTop="31" />
+			<Button CmdID="CMD_CAPTURE2ND_SELECT_OFF" Left="6" Top="8" Width="10" Height="10" ImageLeft="33" ImageTop="46" />
+			<Label Text="$CAMERA_2" Left="22" Top="2" Height="21" FontName="Segoe UI" FontSize="13" FontBold="0" TextColor="0xe0e0e0" VertAlignment="1" />
+			<Button Tooltip="$CMD_CAPTURE1ST_SHOW" CmdID="CMD_CAPTURE1ST_SHOW" Left="86" Top="4" Width="26" Height="18" ImageLeft="33" ImageTop="61" VisParentMinWidth="150" />
+			<Button Tooltip="$CMD_CAPTURE1ST_HIDE" CmdID="CMD_CAPTURE1ST_HIDE" Left="86" Top="4" Width="26" Height="17" ImageLeft="33" ImageTop="86" VisParentMinWidth="150" />
+
+			<Button Tooltip="$CMD_CAPTURE1ST_PRIMARY_ON" CmdID="CMD_CAPTURE1ST_PRIMARY_ON" Left="-163" Top="9" Width="17" Height="16" ImageLeft="329" ImageTop="59" VisParentMinWidth="300" />
+			<Button Tooltip="$CMD_CAPTURE1ST_PRIMARY_OFF" CmdID="CMD_CAPTURE1ST_PRIMARY_OFF" Left="-163" Top="9" Width="17" Height="16" ImageLeft="329" ImageTop="39" VisParentMinWidth="300" />
+			<Button Tooltip="$CMD_CAPTURE_PIP_SETTING" CmdID="CMD_CAPTURE_PIP_SETTING" Left="-119" Top="9" Width="17" Height="16" ImageLeft="329" ImageTop="19" VisParentMinWidth="280" />
+			<Button Tooltip="$CMD_CAPTURE_FINDWND" CmdID="CMD_CAPTURE1ST_FINDWND" Left="-143" Top="7" Width="17" Height="17" ImageLeft="329" VisParentMinWidth="260" />
+			<Button Tooltip="$CMD_CAPTURE_OPTIMIZE_SIZE" CmdID="CMD_CAPTURE1ST_OPTIMIZE_SIZE" Left="-99" Top="6" Width="30" Height="20" ImageLeft="192" ImageTop="49" VisParentMinWidth="240" />
+			<Button Tooltip="$CMD_CAPTURE_FULLSCREEN" CmdID="CMD_CAPTURE1ST_FULLSCREEN" Left="-68" Top="6" Width="30" Height="20" ImageLeft="192" VisParentMinWidth="210" />
+			<Button Tooltip="$CMD_CAPTURE_NORMALSCREEN" CmdID="CMD_CAPTURE1ST_NORMALSCREEN" Left="-68" Top="6" Width="30" Height="20" ImageLeft="192" ImageTop="25" VisParentMinWidth="180" />
+			<Button Tooltip="$CMD_CAPTURE2ND_HIDE" CmdID="CMD_CAPTURE2ND_HIDE" Left="-32" Top="1" Width="31" Height="29" ImageLeft="30" />
+		</Static>
+
+		<Static Align="Bottom" Height="1" ImageTop="109" ImageWidth="17" ImageHeight="1" AltImageLeft="393" AltImageTop="109" LeftMargin="6" RightMargin="6" UsingRgn="0" />
+		<Static Align="Left" Width="1" ImageTop="32" ImageWidth="1" ImageHeight="76" AltImageLeft="393" AltImageTop="32" TopMargin="2" BottomMargin="72" UsingRgn="0" />
+		<Static Align="Right" Width="1" ImageLeft="16" ImageTop="32" ImageWidth="1" ImageHeight="76" AltImageLeft="409" AltImageTop="32" TopMargin="2" BottomMargin="72" UsingRgn="0" />
+	</Control>
+</2ndCaptureSkinArea>
+
+<BroadcastListSkinArea Image="ChatBroadcast.png" AlphaMode="1" WidthLimit="300" HeightLimit="200" UseWindowFrame="0" >
+<Control>
+<Static Align="Top" State="" LeftMargin="100" RightMargin="10" TopMargin="0" BottomMargin="0" ImageLeft="4" ImageWidth="316" ImageTop="40" ImageHeight="31" Height="31" AltImageLeft="348" AltImageTop="40" UsingRgn="1" >
+	<Label Text="$BROADCAST_LIST" Left="10" Top="1" Width="150" Height="30" FontName="Segoe UI" FontSize="12" TextColor="0xe0e0e0" VertAlignment="1" />
+	<Button Tooltip="$ID_BROADCAST_LIST_WINDOW" CmdID="ID_BROADCAST_LIST_WINDOW" Left="-32" Top="1" Width="31" Height="29" ImageLeft="0" ImageTop="0" />
+</Static>
+<Static Align="Bottom" State="" LeftMargin="100" RightMargin="10" TopMargin="0" BottomMargin="0" ImageLeft="4" ImageWidth="316" ImageTop="297" ImageHeight="1" Height="1" AltImageLeft="348" AltImageTop="297" UsingRgn="1" />
+<Static Align="Left" State="" LeftMargin="0" RightMargin="0" TopMargin="150" BottomMargin="20" ImageLeft="4" ImageWidth="1" ImageTop="71" ImageHeight="226" Width="1" AltImageLeft="348" AltImageTop="71" />
+<Static Align="Right" State="" LeftMargin="0" RightMargin="0" TopMargin="150" BottomMargin="20" ImageLeft="319" ImageWidth="1" ImageTop="71" ImageHeight="226" Width="1" AltImageLeft="663" AltImageTop="71" />
+<Static Align="Client" Contain="CMD_BROADCAST_HOLDER" >
+	<Static Align="Client" Contain="CMD_BROADCAST_LIST" />
+</Static>
+</Control>
+</BroadcastListSkinArea>
+
+<ChatSkinArea Image="ChatBroadcast.png" AlphaMode="1" WidthLimit="300" HeightLimit="200" UseWindowFrame="0" >
+<Control>
+<Static Align="Top" State="" LeftMargin="100" RightMargin="10" TopMargin="0" BottomMargin="0" ImageLeft="4" ImageWidth="316" ImageTop="40" ImageHeight="31" Height="31" AltImageLeft="348" AltImageTop="40" UsingRgn="1" >
+	<Label Text="$CHAT" Left="10" Top="1" Width="150" Height="30" FontName="Segoe UI" FontSize="12" FontBold="1" TextColor="0xFFFFFF" VertAlignment="1" />
+	<Button Tooltip="$ID_CHAT_WINDOW" CmdID="ID_CHAT_WINDOW" Left="-32" Top="1" Width="31" Height="29" ImageLeft="0" ImageTop="0" />
+</Static>
+<Static Align="Bottom" State="" LeftMargin="100" RightMargin="10" TopMargin="0" BottomMargin="0" ImageLeft="4" ImageWidth="316" ImageTop="297" ImageHeight="1" Height="1" AltImageLeft="348" AltImageTop="297" UsingRgn="1" />
+<Static Align="Left" State="" LeftMargin="0" RightMargin="0" TopMargin="150" BottomMargin="20" ImageLeft="4" ImageWidth="1" ImageTop="71" ImageHeight="226" Width="1" AltImageLeft="348" AltImageTop="71" />
+<Static Align="Right" State="" LeftMargin="0" RightMargin="0" TopMargin="150" BottomMargin="20" ImageLeft="319" ImageWidth="1" ImageTop="71" ImageHeight="226" Width="1" AltImageLeft="663" AltImageTop="71" />
+<Static Align="Client" Contain="CMD_CHAT_HOLDER" >
+<Static Align="Client" State="CMD_VTP_MODE" Contain="CMD_REPLY_CONTENT" />
+</Static>
+</Control>
+</ChatSkinArea>
+
+<WindowSkinArea Image="Window.png" AlphaMode="1" UseWindowFrame="0" >
+	<Common>
+		<BtnPosition Left="230" Top="52" Width="73" Height="21" />
+		<AltBtnPosition Left="230" Top="77" Width="73" Height="21" />
+		<BtnTextColor Left="5" Top="124" />
+
+		<TabPosition Left="230" Top="0" Width="76" Height="20" Margin=0 />
+		<AltTabPosition Left="230" Top="25" Width="76" Height="20" />
+		<TabTextColor Left="5" Top="124" />
+
+		<WindowType0 Left="0" Top="0" AltLeft="561" AltTop="1" Width="33" Height="119"
+			TopDrawMargin="69" BottomDrawMargin="49" LeftDrawMargin="16" RightDrawMargin="16"
+			TopSkinMargin="31" BottomSkinMargin="1" LeftSkinMargin="1" RightSkinMargin="1"
+			BottomMargin="36"
+			FontName="Segoe UI" FontSize="9" FontBold="0" FontPosLeft="10" FontPosTop="8" FontColorLeft="1" FontColorTop="128" FontColorAltLeft="5" FontColorAltTop="128" />
+
+		<WindowType1 Left="43" Top="0" AltLeft="604" AltTop="1" Width="33" Height="119"
+			TopDrawMargin="69" BottomDrawMargin="49" LeftDrawMargin="16" RightDrawMargin="16"
+			TopSkinMargin="31" BottomSkinMargin="1" LeftSkinMargin="1" RightSkinMargin="1"
+			TopMargin="27" BottomMargin="36"
+			FontName="Segoe UI" FontSize="9" FontBold="0" FontPosLeft="10" FontPosTop="8" FontColorLeft="1" FontColorTop="128" FontColorAltLeft="5" FontColorAltTop="128" />
+
+		<WindowType2 Left="86" Top="0" AltLeft="647" AltTop="1" Width="33" Height="82"
+			TopDrawMargin="69" BottomDrawMargin="12" LeftDrawMargin="16" RightDrawMargin="16"
+			TopSkinMargin="31" BottomSkinMargin="1" LeftSkinMargin="1" RightSkinMargin="1"
+			FontName="Segoe UI" FontSize="9" FontBold="0" FontPosLeft="10" FontPosTop="8" FontColorLeft="1" FontColorTop="128" FontColorAltLeft="5" FontColorAltTop="128" />
+		<CloseBtn Left="130" Top="0" Width="31" Height="29" PosX="-32" PosY="1" />
+
+		<AboutIcon Left="130" Top="30" Width="49" Height="61" PosX="62" PosY="73" />
+		<LoginLogo Left="0" Top="186" Width="220" Height="32" />
+		<MessageIconType0 Left="410" Top="108" Width="32" Height="32" />
+		<MessageIconType1 Left="448" Top="108" Width="32" Height="32" />
+		<MessageIconType2 Left="486" Top="108" Width="32" Height="32" />
+		<MessageIconType3 Left="524" Top="108" Width="32" Height="32" />
+		<MessageColorPos Left="1" Top="132" />
+		<MessageHotColorPos Left="5" Top="132" />
+		<MessageGrade15 Left="410" Top="144" Width="32" Height="32" />
+		<MessageGrade18 Left="448" Top="144" Width="32" Height="32" />
+		<MessageGrade19 Left="486" Top="144" Width="32" Height="32" />
+		<MessageGradeNone Left="524" Top="144" Width="32" Height="32" />
+		<AutoUpdateLogo Left="16" Top="123" Width="248" Height="29" PosX="1" PosY="29" />
+	</Common>
+</WindowSkinArea>

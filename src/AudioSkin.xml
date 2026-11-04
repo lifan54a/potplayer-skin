@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Skin Version="1.0" MinorVersion="1000" >
+
+#include<Language.txt>
+
+	<ExcludeColorThemeArea Name="Main.png" Left="0" Top="486" Width="661" Height="414" WidthLimit="691" HeightLimit="414"/>
+	<ExcludeColorThemeArea Name="Window.png" Left="130" Top="30" Width="80" Height="61" />
+
+	<MainSkinAreaOscFrame Image="Main.png" AlphaMode="1" UseWindowFrame="0" WidthLimit="350" HeightLimit="100" >
+		#include<Logo.txt>
+		#include<menu.xml>
+		<Control>
+			<Static State="CMD_OFF_FULLSCREEN" Align="Top" Height="1" ImageLeft="0" ImageTop="0" ImageWidth="17" ImageHeight="1" AltImageLeft="809" AltImageTop="0" LeftMargin="1" RightMargin="1" UsingRgn="0" />
+			<Static State="CMD_OFF_FULLSCREEN" Align="Left" Width="1" ImageLeft="0" ImageTop="1" ImageWidth="1" ImageHeight="108" TopMargin="31" BottomMargin="65" AltImageLeft="809" AltImageTop="1" UsingRgn="0" />
+			<Static State="CMD_OFF_FULLSCREEN" Align="Right" Width="1" ImageLeft="16" ImageTop="1" ImageWidth="1" ImageHeight="108" TopMargin="31" BottomMargin="65" AltImageLeft="825" AltImageTop="1" UsingRgn="0" />
+			<Static State="CMD_OFF_FULLSCREEN" Align="Bottom" Height="1" ImageLeft="0" ImageTop="109" ImageWidth="17" ImageHeight="1" AltImageLeft="809" AltImageTop="109" LeftMargin="1" RightMargin="1" UsingRgn="0" />
+
+			<Static Align="Right" Contain="CMD_PLAYLIST_TOGGLE" Width="1" ConstSize="256" >
+				<Static Align="Top" Height="23" ImageLeft="785" ImageTop="2" ImageWidth="13" ImageHeight="16" LeftMargin="4" RightMargin="4" UsingRgn="0" >
+					<Button Tooltip="$PLAYLIST_WINDOW" CmdID="ID_PLAYLIST_WINDOW" Left="-40" Top="0" Width="39" Height="21" ImageLeft="644" ImageTop="128" />
+				</Static>
+				<Static Align="Left" Width="1" ImageLeft="782" ImageTop="32" ImageWidth="1" ImageHeight="76" TopMargin="32" BottomMargin="43" >
+					<Image Left="0" Top="-34" Width="1" Height="34" ImageLeft="1" ImageTop="1" ImageWidth="1" ImageHeight="34" />
+				</Static>
+				<Static Align="Right" Width="1" ImageLeft="799" ImageTop="32" ImageWidth="1" ImageHeight="76" TopMargin="32" BottomMargin="43" />
+			</Static>
+				<Static Align="Right" Contain="CMD_PLAYLIST_TOGGLE" Width="5" ImageLeft="2" ImageTop="1" ImageWidth="5" ImageHeight="16" TopMargin="2" BottomMargin="2" IsSplitter="1" MinSplitterSizeLT="250" MinSplitterSizeRB="200" >
+					<Button Tooltip="$CMD_PLAYLIST_WINDOW_CLOSE" CmdID="CMD_PLAYLIST_WINDOW_CLOSE" Width="5" Height="55" ImageLeft="720" VertCenter="1" GetOffset="1" VisParentMinHeight="30" />
+				</Static>
+
+			<Static Align="Client" Contain="CMD_VIDEO_WINDOW" />
+		</Control>
+	</MainSkinAreaOscFrame>
+
+	<MainSkinAreaOscInside Image="Main.png" AlphaMode="1" UseWindowFrame="0" WidthLimit="701" HeightLimit="335" ForceMinHeight="240" >
+		#include<Logo.txt>
+		#include<menu.xml>
+		<Control>
+			<Static Align="Top" Height="30" ImageLeft="1" ImageTop="1" AltImageLeft="810" AltImageTop="1" ImageWidth="15" ImageHeight="30" LeftMargin="1" RightMargin="1" IsTitleBar="1" UsingRgn="1" >
+				<Label CmdID="CMD_TITLE_MESSAGE" Left="114" Top="3" Width="-191" FontName="Segoe UI" FontSize="14" TextColor="0xe0e0e0" HoriAlignment="1" UsingScroll="1" ScrollDistance="1" ScrollInterval="50" />
+				<Button Tooltip="$ID_MINSCREEN" CmdID="ID_MINSCREEN" Left="-137" Top="0" Width="45" Height="29" ImageLeft="16" ImageTop="122" />
+				<Button Tooltip="$CMD_MAX_WINDOW" CmdID="CMD_MAX_WINDOW" Left="-91" Top="0" Width="45" Height="29" ImageLeft="16" ImageTop="151" />
+				<Button Tooltip="$CMD_RESTORE_WINDOW" CmdID="CMD_RESTORE_WINDOW" Left="-91" Top="0" Width="45" Height="29" ImageLeft="19" ImageTop="91" />
+				<Button Tooltip="$ID_APP_EXIT" CmdID="ID_APP_EXIT" Left="-45" Top="0" Width="45" Height="29" ImageLeft="19" ImageTop="62" />
+				<Button Tooltip="$CMD_MAIN_MENU" CmdID="CMD_MAIN_MENU" Left="0" Top="0" Width="106" Height="29" ImageLeft="162" ImageTop="36" />
+				<Button Tooltip="$ALWAYS_ON_TOP_CYCLE" CmdID="ID_ETC_NEXTONTOP" Left="-183" Top="0" Width="45" Height="29" ImageLeft="174" ImageTop="461" AutoVisible="1" />
+				<Button Tooltip="$ALWAYS_ON_TOP" CmdID="ID_ETC_NEXTONTOP" Left="-183" Top="0" Width="45" Height="29" ImageLeft="309" ImageTop="461" AutoVisible="2" />
+				<Button Tooltip="$ALWAYS_ON_TOP_PLAY" CmdID="ID_ETC_NEXTONTOP" Left="-183" Top="0" Width="45" Height="29" ImageLeft="174" ImageTop="492" AutoVisible="3" />
+				<Button Tooltip="$ALWAYS_ON_TOP_FULL" CmdID="ID_ETC_NEXTONTOP" Left="-183" Top="0" Width="45" Height="29" ImageLeft="309" ImageTop="492" AutoVisible="4" />
+			</Static>
+
+			<Static Align="Right" Contain="CMD_PLAYLIST_TOGGLE" Width="1" ConstSize="256" >
+				<Static Align="Left" Width="1" ImageLeft="782" ImageTop="32" ImageWidth="1" ImageHeight="76" TopMargin="32" BottomMargin="43" >
+					<Image Left="0" Top="-34" Width="1" Height="34" ImageLeft="1" ImageTop="1" ImageWidth="1" ImageHeight="34" />
+				</Static>
+				<Static Align="Right" Width="1" ImageLeft="799" ImageTop="32" ImageWidth="1" ImageHeight="76" TopMargin="32" BottomMargin="43" />
+			</Static>
+			<Static Align="Right" Contain="CMD_PLAYLIST_TOGGLE" Width="5" ImageLeft="2" ImageTop="1" ImageWidth="5" ImageHeight="16" TopMargin="2" BottomMargin="2" IsSplitter="1" MinSplitterSizeLT="250" MinSplitterSizeRB="200" >
+				<Button Tooltip="$CMD_PLAYLIST_WINDOW_CLOSE" CmdID="CMD_PLAYLIST_WINDOW_CLOSE" Width="5" Height="55" ImageLeft="720" VertCenter="1" GetOffset="1" VisParentMinHeight="30" />
+			</Static>
+
+			            <!-- responsive-footer: the video client excludes these 65 pixels -->
+                        <!-- responsive-footer: the video client excludes these 65 pixels -->
+                        <!-- responsive-footer: the video client excludes these 65 pixels -->
+                        <!-- responsive-footer: the video client excludes these 65 pixels -->
+            <Static Align="Bottom" Height="65" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" LeftMargin="2" RightMargin="2" UsingRgn="0">
+                <!-- Seekbar owns the top 21 px. No speed controls in this row. -->
+                <Static Align="Top" Height="21" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" LeftMargin="2" RightMargin="2">
+                    <Static State="CMD_ON_MEDIA_PLAY" Align="Client" VisParentMinWidth="419" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" LeftMargin="2" RightMargin="2">
+                        <Label CmdID="CMD_CURRENTTIME_MESSAGE" Left="8" Top="2" Width="58" Height="16" FontName="Segoe UI" FontSize="12" TextColor="0xCACACA" HoriAlignment="1" VertAlignment="1" />
+                        <Slider CmdID="CMD_TIMEBAR_CTRL" Left="74" Top="1" Width="-74" Height="18" ImageLeft="34" ImageTop="21" ImageWidth="18" ImageHeight="18" LeftMargin="1" RightMargin="1" AltImageLeft="86" AltImageTop="40" BackImageLeft="108" BackImageTop="40" ThumbImageLeft="56" ThumbImageTop="21" ThumbWidth="18" ThumbHeight="18" Cursor="Hand" />
+                        <Label CmdID="CMD_TOTALTIME_MESSAGE" Left="-66" Top="2" Width="58" Height="16" FontName="Segoe UI" FontSize="12" TextColor="0xCACACA" HoriAlignment="1" VertAlignment="1" />
+                    </Static>
+                    <Static State="CMD_ON_MEDIA_PLAY" Align="Client" VisParentMaxWidth="420" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" LeftMargin="2" RightMargin="2">
+                        <Slider CmdID="CMD_TIMEBAR_CTRL" Left="8" Top="1" Width="-8" Height="18" ImageLeft="34" ImageTop="21" ImageWidth="18" ImageHeight="18" LeftMargin="1" RightMargin="1" AltImageLeft="86" AltImageTop="40" BackImageLeft="108" BackImageTop="40" ThumbImageLeft="56" ThumbImageTop="21" ThumbWidth="18" ThumbHeight="18" Cursor="Hand" />
+                    </Static>
+                </Static>
+                <!-- All transport rows have a local origin and nonnegative y coordinates. -->
+                <Static Align="Bottom" Height="44" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" LeftMargin="2" RightMargin="2">
+                    <Static Align="Client" VisParentMaxWidth="350" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" LeftMargin="2" RightMargin="2">
+                        <Button Tooltip="上一个；右键后退 5 秒" CmdID="ID_PROCESS_PREV" AltCmdID="ID_PLAYBACK_5SEC_BACK" Left="8" Top="8" Width="28" Height="28" ImageTop="337" />
+                        <Button Tooltip="播放" CmdID="CMD_MEDIA_PLAY" Left="40" Top="2" Width="40" Height="40" ImageTop="189" />
+                        <Button Tooltip="暂停" CmdID="CMD_MEDIA_PAUSE" Left="40" Top="2" Width="40" Height="40" ImageTop="243" />
+                        <Button Tooltip="下一个；右键前进 5 秒" CmdID="ID_PROCESS_NEXT" AltCmdID="ID_PLAYBACK_5SEC_FORW" Left="84" Top="8" Width="28" Height="28" ImageTop="376" />
+                        <!-- speed-group: 116 x 18, contained by the transport row -->
+                        <Static Left="-120" Top="13" Width="116" Height="18" Image="Main.png" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" UsingRgn="0" LeftMargin="2" RightMargin="2">
+                            <Button Tooltip="减速；右键恢复正常速度" CmdID="ID_PLAY_SPEED_SLOWER" AltCmdID="ID_PLAY_SPEED_NORMAL" Left="0" Top="0" Width="24" Height="18" Image="SpeedControls.png" ImageLeft="0" ImageTop="0" Cursor="Hand" />
+                            <Button Tooltip="当前倍速；点击恢复 1.0 倍速" CmdID="ID_PLAY_SPEED_NORMAL" Left="24" Top="0" Width="68" Height="18" Image="SpeedControls.png" ImageLeft="0" ImageTop="36" Cursor="Hand">
+                                <Label CmdID="CMD_PLAY_SPEED_MESSAGE" Text="%s×" FontName="Segoe UI" FontSize="12" TextColor="0xCACACA" OverTextColor="0x0099FF" PushTextColor="0x007ACC" HoriAlignment="1" VertAlignment="1" />
+                            </Button>
+                            <Button Tooltip="加速；右键恢复正常速度" CmdID="ID_PLAY_SPEED_FASTER" AltCmdID="ID_PLAY_SPEED_NORMAL" Left="92" Top="0" Width="24" Height="18" Image="SpeedControls.png" ImageLeft="0" ImageTop="18" Cursor="Hand" />
+                        </Static>
+                    </Static>
+                    <Static Align="Client" VisParentMinWidth="349" VisParentMaxWidth="700" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" LeftMargin="2" RightMargin="2">
+                        <Button Tooltip="设置" CmdID="ID_OPTION_WINDOW" Left="4" Top="9" Width="28" Height="26" ImageLeft="251" ImageTop="320" />
+                        <Button Tooltip="上一个；右键后退 5 秒" CmdID="ID_PROCESS_PREV" AltCmdID="ID_PLAYBACK_5SEC_BACK" Left="44" Top="8" Width="28" Height="28" ImageTop="337" />
+                        <Button Tooltip="播放" CmdID="CMD_MEDIA_PLAY" Left="80" Top="2" Width="40" Height="40" ImageTop="189" />
+                        <Button Tooltip="暂停" CmdID="CMD_MEDIA_PAUSE" Left="80" Top="2" Width="40" Height="40" ImageTop="243" />
+                        <Button Tooltip="下一个；右键前进 5 秒" CmdID="ID_PROCESS_NEXT" AltCmdID="ID_PLAYBACK_5SEC_FORW" Left="124" Top="8" Width="28" Height="28" ImageTop="376" />
+                        <Button Tooltip="静音" CmdID="ID_AUDIO_MUTE" AutoVisible="-1" Left="174" Top="6" Width="32" Height="32" ImageLeft="139" ImageTop="210" VisParentMinWidth="519" />
+                        <Button Tooltip="取消静音" CmdID="ID_AUDIO_MUTE" AutoVisible="1" Left="174" Top="6" Width="32" Height="32" ImageLeft="139" ImageTop="244" VisParentMinWidth="519" />
+                        <Slider Tooltip="音量" CmdID="CMD_VOLUME_CTRL" Left="210" Top="14" Width="72" Height="16" ImageLeft="154" ImageTop="159" ImageWidth="18" ImageHeight="16" BackImageLeft="221" BackImageTop="159" ThumbImageLeft="154" ThumbImageTop="182" ThumbWidth="16" ThumbHeight="16" Cursor="Hand" VisParentMinWidth="519" />
+                        <!-- speed-group: 116 x 18, contained by the transport row -->
+                        <Static Left="-180" Top="13" Width="116" Height="18" Image="Main.png" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" UsingRgn="0" LeftMargin="2" RightMargin="2">
+                            <Button Tooltip="减速；右键恢复正常速度" CmdID="ID_PLAY_SPEED_SLOWER" AltCmdID="ID_PLAY_SPEED_NORMAL" Left="0" Top="0" Width="24" Height="18" Image="SpeedControls.png" ImageLeft="0" ImageTop="0" Cursor="Hand" />
+                            <Button Tooltip="当前倍速；点击恢复 1.0 倍速" CmdID="ID_PLAY_SPEED_NORMAL" Left="24" Top="0" Width="68" Height="18" Image="SpeedControls.png" ImageLeft="0" ImageTop="36" Cursor="Hand">
+                                <Label CmdID="CMD_PLAY_SPEED_MESSAGE" Text="%s×" FontName="Segoe UI" FontSize="12" TextColor="0xCACACA" OverTextColor="0x0099FF" PushTextColor="0x007ACC" HoriAlignment="1" VertAlignment="1" />
+                            </Button>
+                            <Button Tooltip="加速；右键恢复正常速度" CmdID="ID_PLAY_SPEED_FASTER" AltCmdID="ID_PLAY_SPEED_NORMAL" Left="92" Top="0" Width="24" Height="18" Image="SpeedControls.png" ImageLeft="0" ImageTop="18" Cursor="Hand" />
+                        </Static>
+                        <Button Tooltip="全屏" CmdID="CMD_FULL_WINDOW" Left="-56" Top="9" Width="27" Height="26" ImageLeft="251" ImageTop="124" />
+                        <Button Tooltip="播放列表" CmdID="CMD_PLAYLIST_WINDOW_OFF" AltCmdID="ID_CHAPTER_SEL_MENU" Left="-28" Top="9" Width="27" Height="26" ImageLeft="251" ImageTop="220" />
+                        <Button Tooltip="播放列表" CmdID="CMD_PLAYLIST_WINDOW_ON" AltCmdID="ID_CHAPTER_SEL_MENU" Left="-28" Top="9" Width="27" Height="26" ImageLeft="251" ImageTop="188" />
+                    </Static>
+                    <Static Align="Client" VisParentMinWidth="699" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" LeftMargin="2" RightMargin="2">
+                        <Button Tooltip="设置" CmdID="ID_OPTION_WINDOW" Left="4" Top="9" Width="28" Height="26" ImageLeft="251" ImageTop="320" />
+                        <Button Tooltip="控制面板" CmdID="ID_CONTROL_BOX_WINDOW" Left="36" Top="9" Width="28" Height="26" ImageLeft="251" ImageTop="284" />
+                        <!-- speed-group: 116 x 18, contained by the transport row -->
+                        <Static Left="72" Top="13" Width="116" Height="18" Image="Main.png" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" UsingRgn="0" LeftMargin="2" RightMargin="2">
+                            <Button Tooltip="减速；右键恢复正常速度" CmdID="ID_PLAY_SPEED_SLOWER" AltCmdID="ID_PLAY_SPEED_NORMAL" Left="0" Top="0" Width="24" Height="18" Image="SpeedControls.png" ImageLeft="0" ImageTop="0" Cursor="Hand" />
+                            <Button Tooltip="当前倍速；点击恢复 1.0 倍速" CmdID="ID_PLAY_SPEED_NORMAL" Left="24" Top="0" Width="68" Height="18" Image="SpeedControls.png" ImageLeft="0" ImageTop="36" Cursor="Hand">
+                                <Label CmdID="CMD_PLAY_SPEED_MESSAGE" Text="%s×" FontName="Segoe UI" FontSize="12" TextColor="0xCACACA" OverTextColor="0x0099FF" PushTextColor="0x007ACC" HoriAlignment="1" VertAlignment="1" />
+                            </Button>
+                            <Button Tooltip="加速；右键恢复正常速度" CmdID="ID_PLAY_SPEED_FASTER" AltCmdID="ID_PLAY_SPEED_NORMAL" Left="92" Top="0" Width="24" Height="18" Image="SpeedControls.png" ImageLeft="0" ImageTop="18" Cursor="Hand" />
+                        </Static>
+                        <Static Left="0" Top="0" Width="300" Height="44" HoriCenter="1" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" LeftMargin="2" RightMargin="2">
+                            <Button Tooltip="停止" CmdID="CMD_MEDIA_CLOSE" Left="0" Top="8" Width="28" Height="28" ImageTop="298" />
+                            <Button Tooltip="上一个；右键后退 5 秒" CmdID="ID_PROCESS_PREV" AltCmdID="ID_PLAYBACK_5SEC_BACK" Left="38" Top="8" Width="28" Height="28" ImageTop="337" />
+                            <Button Tooltip="播放" CmdID="CMD_MEDIA_PLAY" Left="76" Top="2" Width="40" Height="40" ImageTop="189" />
+                            <Button Tooltip="暂停" CmdID="CMD_MEDIA_PAUSE" Left="76" Top="2" Width="40" Height="40" ImageTop="243" />
+                            <Button Tooltip="下一个；右键前进 5 秒" CmdID="ID_PROCESS_NEXT" AltCmdID="ID_PLAYBACK_5SEC_FORW" Left="126" Top="8" Width="28" Height="28" ImageTop="376" />
+                            <Button Tooltip="静音" CmdID="ID_AUDIO_MUTE" AutoVisible="-1" Left="168" Top="6" Width="32" Height="32" ImageLeft="139" ImageTop="210" />
+                            <Button Tooltip="取消静音" CmdID="ID_AUDIO_MUTE" AutoVisible="1" Left="168" Top="6" Width="32" Height="32" ImageLeft="139" ImageTop="244" />
+                            <Slider Tooltip="音量" CmdID="CMD_VOLUME_CTRL" Left="208" Top="14" Width="80" Height="16" ImageLeft="154" ImageTop="159" ImageWidth="18" ImageHeight="16" BackImageLeft="221" BackImageTop="159" ThumbImageLeft="154" ThumbImageTop="182" ThumbWidth="16" ThumbHeight="16" Cursor="Hand" />
+                        </Static>
+                        <Button Tooltip="打开文件" CmdID="ID_OPEN_FILE" AltCmdID="CMD_POPUP_USER_MENU" AltUserMenuName="OpenMenu" Left="-84" Top="9" Width="27" Height="26" ImageLeft="251" ImageTop="252" />
+                        <Button Tooltip="全屏" CmdID="CMD_FULL_WINDOW" Left="-56" Top="9" Width="27" Height="26" ImageLeft="251" ImageTop="124" />
+                        <Button Tooltip="播放列表" CmdID="CMD_PLAYLIST_WINDOW_OFF" AltCmdID="ID_CHAPTER_SEL_MENU" Left="-28" Top="9" Width="27" Height="26" ImageLeft="251" ImageTop="220" />
+                        <Button Tooltip="播放列表" CmdID="CMD_PLAYLIST_WINDOW_ON" AltCmdID="ID_CHAPTER_SEL_MENU" Left="-28" Top="9" Width="27" Height="26" ImageLeft="251" ImageTop="188" />
+                    </Static>
+                </Static>
+            </Static>
+
+			<Static Align="Bottom" Height="240" ImageLeft="895" ImageTop="394" ImageWidth="29" ImageHeight="220" LeftMargin="2" RightMargin="2" UsingRgn="0" >
+				<Static State="CMD_ON_MEDIA_PLAY" Top="10" Height="220" ImageLeft="895" ImageTop="394" ImageWidth="29" ImageHeight="220" LeftMargin="2" RightMargin="2" UsingRgn="0" >
+					<Image Enabled="1" Left="10" Top="35"  ImageLeft="0" ImageTop="438" Width="172" Height="172" ImageWidth="172" ImageHeight="172" />
+					<Image CmdID="CMD_COVER_IMAGE" Enabled="1" CmdID="CMD_COVER_IMAGE" Left="10" Top="35" Width="172" Height="172"/>
+					<Label CmdID="CMD_TITLE_WITH_MESSAGE" Left="201" Top="33" Width="-1" Height="32" TextColor="0xcacaca" FontName="Segoe UI SemiBold" FontSize="20" UsingScroll="1" ScrollDistance="1" ScrollInterval="50" VertAlignment="1" />
+					<Label CmdID="CMD_AUDIO_CODEC_TYPE_MESSAGE" AltCmdID="CMD_POPUP_USER_MENU" AltUserMenuName="EQMenu" Left="201" Top="75" Width="-1" Height="18" TextColor="0x808080" FontName="Segoe UI" FontSize="14" />
+					<Label CmdID="CMD_AUDIO_BIT_RATE_MESSAGE" Text="%s kb/s" Left="201" Top="99" Width="-1" Height="18" TextColor="0x808080" FontName="Segoe UI" FontSize="14" />
+					<Label CmdID="CMD_AUDIO_IN_SAMPLE_RATE_K_MESSAGE" Text="%s kHz" Left="201" Top="123" Width="-1" Height="18" TextColor="0x808080" FontName="Segoe UI" FontSize="14" />
+					<Visual Left="201" Top="167" Width="-6" Height="40"
+						BarWidth="6" BarDistance="3" BarStartColorX="35" BarStartColorY="29" BarEndColorX="35" BarEndColorY="29"
+						LineDistance="2" LineHeight="1" LineDivide="2" RefreshTime="25"
+						OscColorX="35" OscColorY="29"
+						PeakColorX="35" PeakColorY="29" PeakHeight="2" PeakFallDistance="2" PeakFallTime="500"
+					/>
+				</Static>
+			</Static>
+
+			<Static Align="Client" Contain="CMD_VIDEO_WINDOW" />
+		</Control>
+	</MainSkinAreaOscInside>
+
+	<MainSkinArea Image="Main.png" AlphaMode="1" UseWindowFrame="0" WidthLimit="701" HeightLimit="0" ForceMinHeight="240" >
+		#include<Logo.txt>
+		#include<menu.xml>
+		<Control>
+			<Static State="CMD_OFF_FULLSCREEN" Align="Top" Height="1" ImageLeft="0" ImageTop="0" ImageWidth="17" ImageHeight="1" AltImageLeft="809" AltImageTop="0" LeftMargin="1" RightMargin="1" UsingRgn="0" />
+			<Static State="CMD_OFF_FULLSCREEN" Align="Left" Width="1" ImageLeft="0" ImageTop="1" ImageWidth="1" ImageHeight="108" TopMargin="31" BottomMargin="65" AltImageLeft="809" AltImageTop="1" UsingRgn="0" />
+			<Static State="CMD_OFF_FULLSCREEN" Align="Right" Width="1" ImageLeft="16" ImageTop="1" ImageWidth="1" ImageHeight="108" TopMargin="31" BottomMargin="65" AltImageLeft="825" AltImageTop="1" UsingRgn="0" />
+			<Static State="CMD_OFF_FULLSCREEN" Align="Bottom" Height="1" ImageLeft="0" ImageTop="109" ImageWidth="17" ImageHeight="1" AltImageLeft="809" AltImageTop="109" LeftMargin="1" RightMargin="1" UsingRgn="0" />
+
+			<Static Align="Top" Height="30" ImageLeft="1" ImageTop="1" AltImageLeft="810" AltImageTop="1" ImageWidth="15" ImageHeight="30" LeftMargin="1" RightMargin="1" IsTitleBar="1" UsingRgn="1" >
+				<Label CmdID="CMD_TITLE_MESSAGE" Left="114" Top="3" Width="-191" FontName="Segoe UI" FontSize="14" TextColor="0xe0e0e0" HoriAlignment="1" UsingScroll="1" ScrollDistance="1" ScrollInterval="50" />
+				<Button Tooltip="$ID_MINSCREEN" CmdID="ID_MINSCREEN" Left="-137" Top="0" Width="45" Height="29" ImageLeft="16" ImageTop="122" />
+				<Button Tooltip="$CMD_MAX_WINDOW" CmdID="CMD_MAX_WINDOW" Left="-91" Top="0" Width="45" Height="29" ImageLeft="16" ImageTop="151" />
+				<Button Tooltip="$CMD_RESTORE_WINDOW" CmdID="CMD_RESTORE_WINDOW" Left="-91" Top="0" Width="45" Height="29" ImageLeft="19" ImageTop="91" />
+				<Button Tooltip="$ID_APP_EXIT" CmdID="ID_APP_EXIT" Left="-45" Top="0" Width="45" Height="29" ImageLeft="19" ImageTop="62" />
+				<Button Tooltip="$CMD_MAIN_MENU" CmdID="CMD_MAIN_MENU" Left="0" Top="0" Width="106" Height="29" ImageLeft="162" ImageTop="36" />
+				<Button Tooltip="$ALWAYS_ON_TOP_CYCLE" CmdID="ID_ETC_NEXTONTOP" Left="-183" Top="0" Width="45" Height="29" ImageLeft="174" ImageTop="461" AutoVisible="1" />
+				<Button Tooltip="$ALWAYS_ON_TOP" CmdID="ID_ETC_NEXTONTOP" Left="-183" Top="0" Width="45" Height="29" ImageLeft="309" ImageTop="461" AutoVisible="2" />
+				<Button Tooltip="$ALWAYS_ON_TOP_PLAY" CmdID="ID_ETC_NEXTONTOP" Left="-183" Top="0" Width="45" Height="29" ImageLeft="174" ImageTop="492" AutoVisible="3" />
+				<Button Tooltip="$ALWAYS_ON_TOP_FULL" CmdID="ID_ETC_NEXTONTOP" Left="-183" Top="0" Width="45" Height="29" ImageLeft="309" ImageTop="492" AutoVisible="4" />
+			</Static>
+
+			<Static Align="Right" Contain="CMD_PLAYLIST_TOGGLE" Width="1" ConstSize="256" >
+				<Static Align="Left" Width="1" ImageLeft="782" ImageTop="32" ImageWidth="1" ImageHeight="76" TopMargin="32" BottomMargin="43" >
+					<Image Left="0" Top="-34" Width="1" Height="34" ImageLeft="1" ImageTop="1" ImageWidth="1" ImageHeight="34" />
+				</Static>
+				<Static Align="Right" Width="1" ImageLeft="799" ImageTop="32" ImageWidth="1" ImageHeight="76" TopMargin="32" BottomMargin="43" />
+			</Static>
+			<Static Align="Right" Contain="CMD_PLAYLIST_TOGGLE" Width="5" ImageLeft="2" ImageTop="1" ImageWidth="5" ImageHeight="16" TopMargin="2" BottomMargin="2" IsSplitter="1" MinSplitterSizeLT="250" MinSplitterSizeRB="200" >
+				<Button Tooltip="$CMD_PLAYLIST_WINDOW_CLOSE" CmdID="CMD_PLAYLIST_WINDOW_CLOSE" Width="5" Height="55" ImageLeft="720" VertCenter="1" GetOffset="1" VisParentMinHeight="30" />
+			</Static>
+
+			            <!-- responsive-footer: the video client excludes these 65 pixels -->
+                        <!-- responsive-footer: the video client excludes these 65 pixels -->
+                        <!-- responsive-footer: the video client excludes these 65 pixels -->
+                        <!-- responsive-footer: the video client excludes these 65 pixels -->
+            <Static Align="Bottom" Height="65" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" LeftMargin="2" RightMargin="2" UsingRgn="0">
+                <!-- Seekbar owns the top 21 px. No speed controls in this row. -->
+                <Static Align="Top" Height="21" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" LeftMargin="2" RightMargin="2">
+                    <Static State="CMD_ON_MEDIA_PLAY" Align="Client" VisParentMinWidth="419" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" LeftMargin="2" RightMargin="2">
+                        <Label CmdID="CMD_CURRENTTIME_MESSAGE" Left="8" Top="2" Width="58" Height="16" FontName="Segoe UI" FontSize="12" TextColor="0xCACACA" HoriAlignment="1" VertAlignment="1" />
+                        <Slider CmdID="CMD_TIMEBAR_CTRL" Left="74" Top="1" Width="-74" Height="18" ImageLeft="34" ImageTop="21" ImageWidth="18" ImageHeight="18" LeftMargin="1" RightMargin="1" AltImageLeft="86" AltImageTop="40" BackImageLeft="108" BackImageTop="40" ThumbImageLeft="56" ThumbImageTop="21" ThumbWidth="18" ThumbHeight="18" Cursor="Hand" />
+                        <Label CmdID="CMD_TOTALTIME_MESSAGE" Left="-66" Top="2" Width="58" Height="16" FontName="Segoe UI" FontSize="12" TextColor="0xCACACA" HoriAlignment="1" VertAlignment="1" />
+                    </Static>
+                    <Static State="CMD_ON_MEDIA_PLAY" Align="Client" VisParentMaxWidth="420" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" LeftMargin="2" RightMargin="2">
+                        <Slider CmdID="CMD_TIMEBAR_CTRL" Left="8" Top="1" Width="-8" Height="18" ImageLeft="34" ImageTop="21" ImageWidth="18" ImageHeight="18" LeftMargin="1" RightMargin="1" AltImageLeft="86" AltImageTop="40" BackImageLeft="108" BackImageTop="40" ThumbImageLeft="56" ThumbImageTop="21" ThumbWidth="18" ThumbHeight="18" Cursor="Hand" />
+                    </Static>
+                </Static>
+                <!-- All transport rows have a local origin and nonnegative y coordinates. -->
+                <Static Align="Bottom" Height="44" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" LeftMargin="2" RightMargin="2">
+                    <Static Align="Client" VisParentMaxWidth="350" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" LeftMargin="2" RightMargin="2">
+                        <Button Tooltip="上一个；右键后退 5 秒" CmdID="ID_PROCESS_PREV" AltCmdID="ID_PLAYBACK_5SEC_BACK" Left="8" Top="8" Width="28" Height="28" ImageTop="337" />
+                        <Button Tooltip="播放" CmdID="CMD_MEDIA_PLAY" Left="40" Top="2" Width="40" Height="40" ImageTop="189" />
+                        <Button Tooltip="暂停" CmdID="CMD_MEDIA_PAUSE" Left="40" Top="2" Width="40" Height="40" ImageTop="243" />
+                        <Button Tooltip="下一个；右键前进 5 秒" CmdID="ID_PROCESS_NEXT" AltCmdID="ID_PLAYBACK_5SEC_FORW" Left="84" Top="8" Width="28" Height="28" ImageTop="376" />
+                        <!-- speed-group: 116 x 18, contained by the transport row -->
+                        <Static Left="-120" Top="13" Width="116" Height="18" Image="Main.png" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" UsingRgn="0" LeftMargin="2" RightMargin="2">
+                            <Button Tooltip="减速；右键恢复正常速度" CmdID="ID_PLAY_SPEED_SLOWER" AltCmdID="ID_PLAY_SPEED_NORMAL" Left="0" Top="0" Width="24" Height="18" Image="SpeedControls.png" ImageLeft="0" ImageTop="0" Cursor="Hand" />
+                            <Button Tooltip="当前倍速；点击恢复 1.0 倍速" CmdID="ID_PLAY_SPEED_NORMAL" Left="24" Top="0" Width="68" Height="18" Image="SpeedControls.png" ImageLeft="0" ImageTop="36" Cursor="Hand">
+                                <Label CmdID="CMD_PLAY_SPEED_MESSAGE" Text="%s×" FontName="Segoe UI" FontSize="12" TextColor="0xCACACA" OverTextColor="0x0099FF" PushTextColor="0x007ACC" HoriAlignment="1" VertAlignment="1" />
+                            </Button>
+                            <Button Tooltip="加速；右键恢复正常速度" CmdID="ID_PLAY_SPEED_FASTER" AltCmdID="ID_PLAY_SPEED_NORMAL" Left="92" Top="0" Width="24" Height="18" Image="SpeedControls.png" ImageLeft="0" ImageTop="18" Cursor="Hand" />
+                        </Static>
+                    </Static>
+                    <Static Align="Client" VisParentMinWidth="349" VisParentMaxWidth="700" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" LeftMargin="2" RightMargin="2">
+                        <Button Tooltip="设置" CmdID="ID_OPTION_WINDOW" Left="4" Top="9" Width="28" Height="26" ImageLeft="251" ImageTop="320" />
+                        <Button Tooltip="上一个；右键后退 5 秒" CmdID="ID_PROCESS_PREV" AltCmdID="ID_PLAYBACK_5SEC_BACK" Left="44" Top="8" Width="28" Height="28" ImageTop="337" />
+                        <Button Tooltip="播放" CmdID="CMD_MEDIA_PLAY" Left="80" Top="2" Width="40" Height="40" ImageTop="189" />
+                        <Button Tooltip="暂停" CmdID="CMD_MEDIA_PAUSE" Left="80" Top="2" Width="40" Height="40" ImageTop="243" />
+                        <Button Tooltip="下一个；右键前进 5 秒" CmdID="ID_PROCESS_NEXT" AltCmdID="ID_PLAYBACK_5SEC_FORW" Left="124" Top="8" Width="28" Height="28" ImageTop="376" />
+                        <Button Tooltip="静音" CmdID="ID_AUDIO_MUTE" AutoVisible="-1" Left="174" Top="6" Width="32" Height="32" ImageLeft="139" ImageTop="210" VisParentMinWidth="519" />
+                        <Button Tooltip="取消静音" CmdID="ID_AUDIO_MUTE" AutoVisible="1" Left="174" Top="6" Width="32" Height="32" ImageLeft="139" ImageTop="244" VisParentMinWidth="519" />
+                        <Slider Tooltip="音量" CmdID="CMD_VOLUME_CTRL" Left="210" Top="14" Width="72" Height="16" ImageLeft="154" ImageTop="159" ImageWidth="18" ImageHeight="16" BackImageLeft="221" BackImageTop="159" ThumbImageLeft="154" ThumbImageTop="182" ThumbWidth="16" ThumbHeight="16" Cursor="Hand" VisParentMinWidth="519" />
+                        <!-- speed-group: 116 x 18, contained by the transport row -->
+                        <Static Left="-180" Top="13" Width="116" Height="18" Image="Main.png" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" UsingRgn="0" LeftMargin="2" RightMargin="2">
+                            <Button Tooltip="减速；右键恢复正常速度" CmdID="ID_PLAY_SPEED_SLOWER" AltCmdID="ID_PLAY_SPEED_NORMAL" Left="0" Top="0" Width="24" Height="18" Image="SpeedControls.png" ImageLeft="0" ImageTop="0" Cursor="Hand" />
+                            <Button Tooltip="当前倍速；点击恢复 1.0 倍速" CmdID="ID_PLAY_SPEED_NORMAL" Left="24" Top="0" Width="68" Height="18" Image="SpeedControls.png" ImageLeft="0" ImageTop="36" Cursor="Hand">
+                                <Label CmdID="CMD_PLAY_SPEED_MESSAGE" Text="%s×" FontName="Segoe UI" FontSize="12" TextColor="0xCACACA" OverTextColor="0x0099FF" PushTextColor="0x007ACC" HoriAlignment="1" VertAlignment="1" />
+                            </Button>
+                            <Button Tooltip="加速；右键恢复正常速度" CmdID="ID_PLAY_SPEED_FASTER" AltCmdID="ID_PLAY_SPEED_NORMAL" Left="92" Top="0" Width="24" Height="18" Image="SpeedControls.png" ImageLeft="0" ImageTop="18" Cursor="Hand" />
+                        </Static>
+                        <Button Tooltip="全屏" CmdID="CMD_FULL_WINDOW" Left="-56" Top="9" Width="27" Height="26" ImageLeft="251" ImageTop="124" />
+                        <Button Tooltip="播放列表" CmdID="CMD_PLAYLIST_WINDOW_OFF" AltCmdID="ID_CHAPTER_SEL_MENU" Left="-28" Top="9" Width="27" Height="26" ImageLeft="251" ImageTop="220" />
+                        <Button Tooltip="播放列表" CmdID="CMD_PLAYLIST_WINDOW_ON" AltCmdID="ID_CHAPTER_SEL_MENU" Left="-28" Top="9" Width="27" Height="26" ImageLeft="251" ImageTop="188" />
+                    </Static>
+                    <Static Align="Client" VisParentMinWidth="699" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" LeftMargin="2" RightMargin="2">
+                        <Button Tooltip="设置" CmdID="ID_OPTION_WINDOW" Left="4" Top="9" Width="28" Height="26" ImageLeft="251" ImageTop="320" />
+                        <Button Tooltip="控制面板" CmdID="ID_CONTROL_BOX_WINDOW" Left="36" Top="9" Width="28" Height="26" ImageLeft="251" ImageTop="284" />
+                        <!-- speed-group: 116 x 18, contained by the transport row -->
+                        <Static Left="72" Top="13" Width="116" Height="18" Image="Main.png" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" UsingRgn="0" LeftMargin="2" RightMargin="2">
+                            <Button Tooltip="减速；右键恢复正常速度" CmdID="ID_PLAY_SPEED_SLOWER" AltCmdID="ID_PLAY_SPEED_NORMAL" Left="0" Top="0" Width="24" Height="18" Image="SpeedControls.png" ImageLeft="0" ImageTop="0" Cursor="Hand" />
+                            <Button Tooltip="当前倍速；点击恢复 1.0 倍速" CmdID="ID_PLAY_SPEED_NORMAL" Left="24" Top="0" Width="68" Height="18" Image="SpeedControls.png" ImageLeft="0" ImageTop="36" Cursor="Hand">
+                                <Label CmdID="CMD_PLAY_SPEED_MESSAGE" Text="%s×" FontName="Segoe UI" FontSize="12" TextColor="0xCACACA" OverTextColor="0x0099FF" PushTextColor="0x007ACC" HoriAlignment="1" VertAlignment="1" />
+                            </Button>
+                            <Button Tooltip="加速；右键恢复正常速度" CmdID="ID_PLAY_SPEED_FASTER" AltCmdID="ID_PLAY_SPEED_NORMAL" Left="92" Top="0" Width="24" Height="18" Image="SpeedControls.png" ImageLeft="0" ImageTop="18" Cursor="Hand" />
+                        </Static>
+                        <Static Left="0" Top="0" Width="300" Height="44" HoriCenter="1" ImageLeft="2" ImageTop="40" ImageWidth="11" ImageHeight="68" LeftMargin="2" RightMargin="2">
+                            <Button Tooltip="停止" CmdID="CMD_MEDIA_CLOSE" Left="0" Top="8" Width="28" Height="28" ImageTop="298" />
+                            <Button Tooltip="上一个；右键后退 5 秒" CmdID="ID_PROCESS_PREV" AltCmdID="ID_PLAYBACK_5SEC_BACK" Left="38" Top="8" Width="28" Height="28" ImageTop="337" />
+                            <Button Tooltip="播放" CmdID="CMD_MEDIA_PLAY" Left="76" Top="2" Width="40" Height="40" ImageTop="189" />
+                            <Button Tooltip="暂停" CmdID="CMD_MEDIA_PAUSE" Left="76" Top="2" Width="40" Height="40" ImageTop="243" />
+                            <Button Tooltip="下一个；右键前进 5 秒" CmdID="ID_PROCESS_NEXT" AltCmdID="ID_PLAYBACK_5SEC_FORW" Left="126" Top="8" Width="28" Height="28" ImageTop="376" />
+                            <Button Tooltip="静音" CmdID="ID_AUDIO_MUTE" AutoVisible="-1" Left="168" Top="6" Width="32" Height="32" ImageLeft="139" ImageTop="210" />
+                            <Button Tooltip="取消静音" CmdID="ID_AUDIO_MUTE" AutoVisible="1" Left="168" Top="6" Width="32" Height="32" ImageLeft="139" ImageTop="244" />
+                            <Slider Tooltip="音量" CmdID="CMD_VOLUME_CTRL" Left="208" Top="14" Width="80" Height="16" ImageLeft="154" ImageTop="159" ImageWidth="18" ImageHeight="16" BackImageLeft="221" BackImageTop="159" ThumbImageLeft="154" ThumbImageTop="182" ThumbWidth="16" ThumbHeight="16" Cursor="Hand" />
+                        </Static>
+                        <Button Tooltip="打开文件" CmdID="ID_OPEN_FILE" AltCmdID="CMD_POPUP_USER_MENU" AltUserMenuName="OpenMenu" Left="-84" Top="9" Width="27" Height="26" ImageLeft="251" ImageTop="252" />
+                        <Button Tooltip="全屏" CmdID="CMD_FULL_WINDOW" Left="-56" Top="9" Width="27" Height="26" ImageLeft="251" ImageTop="124" />
+                        <Button Tooltip="播放列表" CmdID="CMD_PLAYLIST_WINDOW_OFF" AltCmdID="ID_CHAPTER_SEL_MENU" Left="-28" Top="9" Width="27" Height="26" ImageLeft="251" ImageTop="220" />
+                        <Button Tooltip="播放列表" CmdID="CMD_PLAYLIST_WINDOW_ON" AltCmdID="ID_CHAPTER_SEL_MENU" Left="-28" Top="9" Width="27" Height="26" ImageLeft="251" ImageTop="188" />
+                    </Static>
+                </Static>
+            </Static>
+
+			<Static Align="Bottom" Height="240" ImageLeft="895" ImageTop="394" ImageWidth="29" ImageHeight="220" LeftMargin="2" RightMargin="2" UsingRgn="0" >
+				<Static State="CMD_ON_MEDIA_PLAY" Top="10" Height="220" ImageLeft="895" ImageTop="394" ImageWidth="29" ImageHeight="220" LeftMargin="2" RightMargin="2" UsingRgn="0" >
+					<Image Enabled="1" Left="10" Top="35"  ImageLeft="0" ImageTop="438" Width="172" Height="172" ImageWidth="172" ImageHeight="172" />
+					<Image CmdID="CMD_COVER_IMAGE" Enabled="1" CmdID="CMD_COVER_IMAGE" Left="10" Top="35" Width="172" Height="172"/>
+					<Label CmdID="CMD_TITLE_WITH_MESSAGE" Left="201" Top="33" Width="-1" Height="32" TextColor="0xcacaca" FontName="Segoe UI SemiBold" FontSize="20" UsingScroll="1" ScrollDistance="1" ScrollInterval="50" VertAlignment="1" />
+					<Label CmdID="CMD_AUDIO_CODEC_TYPE_MESSAGE" AltCmdID="CMD_POPUP_USER_MENU" AltUserMenuName="EQMenu" Left="201" Top="75" Width="-1" Height="18" TextColor="0x808080" FontName="Segoe UI" FontSize="14" />
+					<Label CmdID="CMD_AUDIO_BIT_RATE_MESSAGE" Text="%s kb/s" Left="201" Top="99" Width="-1" Height="18" TextColor="0x808080" FontName="Segoe UI" FontSize="14" />
+					<Label CmdID="CMD_AUDIO_IN_SAMPLE_RATE_K_MESSAGE" Text="%s kHz" Left="201" Top="123" Width="-1" Height="18" TextColor="0x808080" FontName="Segoe UI" FontSize="14" />
+					<Visual Left="201" Top="167" Width="-6" Height="40"
+						BarWidth="6" BarDistance="3" BarStartColorX="35" BarStartColorY="29" BarEndColorX="35" BarEndColorY="29"
+						LineDistance="2" LineHeight="1" LineDivide="2" RefreshTime="25"
+						OscColorX="35" OscColorY="29"
+						PeakColorX="35" PeakColorY="29" PeakHeight="2" PeakFallDistance="2" PeakFallTime="500"
+					/>
+				</Static>
+			</Static>
+
+			<Static Align="Client" Contain="CMD_VIDEO_WINDOW" />
+		</Control>
+	</MainSkinArea>
+	#include<common.xml>
+</Skin>

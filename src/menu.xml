@@ -1,0 +1,114 @@
+﻿<Menu>
+	<UserMenu Name="OpenMenu" >
+		<MenuItem CmdID="ID_OPEN_FILE" />
+		<MenuItem CmdID="ID_OPEN_URL" />
+		<MenuItem CmdID="ID_OPEN_FOLDER" />
+		<MenuItem CmdID='ID_SIMPLE_FILE_OPEN' />
+		<MenuItem CmdID="" />
+		<MenuItem CmdID='ID_OPEN_IFO' />
+		<MenuItem CmdID="ID_OPEN_DVD" />
+		<MenuItem CmdID="ID_OPEN_BLURAY" />
+	</UserMenu>
+
+	<UserMenu Name="AudioSubtitleMenu" >
+		<MenuItem CmdID="CMD_POPUPMENU_AUDIO_LANG" />
+		<MenuItem CmdID="ID_CAPTION_VISIBLE" />
+		<MenuItem CmdID="CMD_POPUPMENU_CAPTION_LANG" />
+		<MenuItem CmdID="" />
+		<MenuItem CmdID="ID_AUDIO_SPDIF" />
+	</UserMenu>
+
+	<UserMenu Name='DvdPopupMenu' >
+		<MenuItem CmdID='ID_DVD_PREV_CHAPTER' />
+		<MenuItem CmdID='ID_DVD_NEXT_CHAPTER' />
+		<MenuItem CmdID='ID_DVD_RESUME' />
+		<MenuItem CmdID='ID_DVD_ROOT_MENU' />
+		<MenuItem CmdID='ID_DVD_TITLE_MENU' />
+		<MenuItem CmdID='ID_DVD_CHAPTER_MENU' />
+		<MenuItem CmdID='ID_DVD_AUDIO_MENU' />
+		<MenuItem CmdID='ID_DVD_CAPTION_MENU' />
+		<MenuItem CmdID='ID_DVD_ANGLE_MENU' />
+	</UserMenu>
+
+	<UserMenu Name="DVDAudioSubtitleMenu" >
+		<MenuItem CmdID="CMD_POPUPMENU_DVD_AUDIO" />
+		<MenuItem CmdID="CMD_POPUPMENU_DVD_CAPTION" />
+		<MenuItem CmdID="" />
+		<MenuItem CmdID="ID_AUDIO_SPDIF" />
+	</UserMenu>
+
+	<UserMenu Name="EQMenu" >
+		<MenuItem CmdID="ID_AUDIO_EQULIZER" />
+		<MenuItem CmdID="" />
+		<MenuItem CmdID="CMD_POPUPMENU_AUDIO_EQULIZER" NoSubMenu="1" />
+	</UserMenu>
+
+	<UserMenu Name="AddMenu" >
+		<MenuItem CmdID="ID_PLAYLIST_FILE_ADD" />
+		<MenuItem CmdID="ID_PLAYLIST_FOLDER_ADD" />
+		<MenuItem CmdID="ID_PLAYLIST_URL_ADD" />
+		<MenuItem CmdID="" />
+		<MenuItem CmdID="ID_PLAYLIST_FIND_FILE" />
+	</UserMenu>
+
+	<UserMenu Name="PlayModeMenu" >
+		<MenuItem CmdID="ID_PLAYBACK_REPEAT_NONE" />
+		<MenuItem CmdID="ID_PLAYBACK_REPEAT_ALL" />
+		<MenuItem CmdID="ID_PLAYBACK_REPEAT_ONE" />
+		<MenuItem CmdID="" />
+		<MenuItem CmdID="ID_PLAYBACK_SHUFFLE" />
+	</UserMenu>
+
+	<UserMenu Name="SubtitleSelMenu" >
+		<MenuItem CmdID="ID_CAPTION_VISIBLE" />
+		<MenuItem CmdID="" />
+		<MenuItem CmdID="CMD_POPUPMENU_CAPTION_LANG" NoSubMenu="1" />
+	</UserMenu>
+	<UserMenu Name="SubtitleSaveMenu" >
+		<MenuItem CmdID="ID_CAPTION_SAVE_SYNC" />
+		<MenuItem CmdID="ID_CAPTION_SAVEAS" />
+		<MenuItem CmdID="ID_CAPTION_SAVE_MOVIE" />
+		<MenuItem CmdID="" />
+		<MenuItem CmdID="ID_CAPTION_EXPLORER" />
+	</UserMenu>
+
+	<UserMenu Name="CaptureMenu" >
+		<!--<MenuItem CmdID="ID_VIDEO_IMAGE_COPY" />
+		<MenuItem CmdID="ID_VIDEO_IMAGE_CAPTURE_PROMPT" />
+		<MenuItem CmdID="" />
+		<MenuItem CmdID="ID_VIDEO_IMAGE_COPY_SIZE" />
+		<MenuItem CmdID="ID_VIDEO_IMAGE_CAPTURE_PROMPT_SIZE" />
+		<MenuItem CmdID="" />-->
+		<MenuItem CmdID="ID_VIDEO_IMAGE_THUMBNAIL" />
+		<MenuItem CmdID="ID_VIDEO_ADV_CAPTURE" />
+		<MenuItem CmdID="ID_VIDEO_ADV_CAPTURE_START" />
+		<!--<MenuItem CmdID="ID_SAVE_MOVIE" />-->
+		<MenuItem CmdID="" />
+		<MenuItem CmdID="ID_VIDEO_OPEN_FOLDER" />
+	</UserMenu>
+
+	<UserMenu Name="HDRMenu" >
+		<MenuItem CmdID="ID_VIDEO_PS_FOLDER_OPEN" />
+		<MenuItem CmdID="" />
+		<MenuItem CmdID="ID_VIDEO_PS_SMPTE_2086" />
+		<MenuItem CmdID="ID_VIDEO_PS_SMPTE_2084" />
+	</UserMenu>
+</Menu>
+
+<!--  
+<ColorTheme>
+	<ColorThemeYUV Name="YUV 浅灰" Sat="0" Hue="0" />
+	<ColorThemeRGB Name="RGB 暗灰" Red="-100" Green="-100" Blue="-100" />
+	<ColorThemeRGB Name="RGB 浅灰" Red="-60" Green="-60" Blue="-60" />
+	<ColorThemeRGB Name="RGB 高亮" Red="50" Green="50" Blue="50" />
+	<ColorThemeRGB Name="RGB 粉红" Red="100" Green="20" Blue="50" />
+	<ColorThemeRGB Name="RGB 胭紅" Red="80" Green="0" Blue="0" />
+	<ColorThemeRGB Name="RGB 淡黄" Red="20" Green="50" Blue="-20" />
+	<ColorThemeRGB Name="RGB 柠黄" Red="100" Green="25" Blue="-30" />
+	<ColorThemeRGB Name="RGB 翠绿" Red="25" Green="100" Blue="-30" />
+	<ColorThemeRGB Name="RGB 嫩绿" Red="0" Green="55" Blue="0" />
+	<ColorThemeRGB Name="RGB 青蓝" Red="-50" Green="-30" Blue="0" />
+	<ColorThemeRGB Name="RGB 水蓝" Red="0" Green="20" Blue="100" />
+	<ColorThemeRGB Name="RGB 古紫" Red="0" Green="-40" Blue="0" />
+	<ColorThemeRGB Name="RGB 玫紫" Red="100" Green="-20" Blue="50" />
+-->
